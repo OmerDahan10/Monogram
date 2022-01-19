@@ -1,0 +1,1000 @@
+[
+    {
+        "_id": "p101",
+        "txt": "Best trip ever",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u101",
+            "username": "Muki",
+            "fullname": "Muki Muk",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c1001",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "good one!"
+            },
+            {
+                "_id": "c1002",
+                "by": {
+                    "_id": "u106",
+                    "username": "Dor1",
+                    "fullname": "Dor Cohen",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "good!"
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+            "fun",
+            "travel"
+        ]
+    },
+    {
+        "_id": "p102",
+        "txt": "Best view in the world",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u101",
+            "username": "Muki",
+            "fullname": "Muki Muk",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c1101",
+                "by": {
+                    "_id": "u106",
+                    "username": "Dor1",
+                    "fullname": "Dor Cohen",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Very NICE!"
+            },
+            {
+                "_id": "c1102",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Nice one!"
+            },
+            {
+                "_id": "c1103",
+                "by": {
+                    "_id": "u111",
+                    "username": "Sharoni",
+                    "fullname": "Sharon Levi",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "WoW!"
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+            "fun",
+            "best View"
+        ]
+    },
+    {
+        "_id": "p103",
+        "txt": "",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u101",
+            "username": "Muki",
+            "fullname": "Muki Muk",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c1201",
+                "by": {
+                    "_id": "u109",
+                    "username": "Naamonet",
+                    "fullname": "Naama Silver",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "AMIZZZZ!"
+            },
+            {
+                "_id": "c1202",
+                "by": {
+                    "_id": "u104",
+                    "username": "Dandi",
+                    "fullname": "Dan D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Beautiful"
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+            "fun"
+        ]
+    },
+    {
+        "_id": "p201",
+        "txt": "Dont need more",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u102",
+            "username": "Shuki",
+            "fullname": "Shuki Gabay",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c2001",
+                "by": {
+                    "_id": "u104",
+                    "username": "Dandi",
+                    "fullname": "Dan D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Have FUN"
+            },
+            {
+                "_id": "c2002",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Miss you bro"
+            },
+            {
+                "_id": "c2003",
+                "by": {
+                    "_id": "u101",
+                    "username": "Muki",
+                    "fullname": "Muki Muk",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Can't wait to see you again!"
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "_id": "p202",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u102",
+            "username": "Shuki",
+            "fullname": "Shuki Gabay",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c2101",
+                "by": {
+                    "_id": "u111",
+                    "username": "Sharoni",
+                    "fullname": "Sharon Levi",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem, ipsum dolor."
+            },
+            {
+                "_id": "c2102",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+            "fun",
+            "best View"
+        ]
+    },
+    {
+        "_id": "p203",
+        "txt": "Best Best Best",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u102",
+            "username": "Shuki",
+            "fullname": "Shuki Gabay",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [ ],
+        "likedBy": [
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [ ]
+    },
+    {
+        "_id": "p301",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u103",
+            "username": "YarD",
+            "fullname": "Yarden D",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c3001",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p302",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u103",
+            "username": "YarD",
+            "fullname": "Yarden D",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c3101",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c3102",
+                "by": {
+                    "_id": "u102",
+                    "username": "Shuki",
+                    "fullname": "Shuki Gabay",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c3103",
+                "by": {
+                    "_id": "u109",
+                    "username": "Naamonet",
+                    "fullname": "Naama Silver",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p303",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u103",
+            "username": "YarD",
+            "fullname": "Yarden D",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [ ],
+        "likedBy": [ ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p401",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u104",
+            "username": "Dandi",
+            "fullname": "Dan D",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c4001",
+                "by": {
+                    "_id": "u105",
+                    "username": "Bobi",
+                    "fullname": "Bobi B",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c4002",
+                "by": {
+                    "_id": "u102",
+                    "username": "Shuki",
+                    "fullname": "Shuki Gabay",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c4003",
+                "by": {
+                    "_id": "u109",
+                    "username": "Naamonet",
+                    "fullname": "Naama Silver",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c4004",
+                "by": {
+                    "_id": "u103",
+                    "username": "YarD",
+                    "fullname": "Yarden D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p402",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u104",
+            "username": "Dandi",
+            "fullname": "Dan D",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c4101",
+                "by": {
+                    "_id": "u111",
+                    "username": "Sharoni",
+                    "fullname": "Sharon Levi",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p403",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u104",
+            "username": "Dandi",
+            "fullname": "Dan D",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [ ],
+        "likedBy": [
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p501",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u105",
+            "username": "Bobi",
+            "fullname": "Bobi B",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c5001",
+                "by": {
+                    "_id": "u104",
+                    "username": "Dandi",
+                    "fullname": "Dan D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c5002",
+                "by": {
+                    "_id": "u111",
+                    "username": "Sharoni",
+                    "fullname": "Sharon Levi",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c5003",
+                "by": {
+                    "_id": "u107",
+                    "username": "Omer",
+                    "fullname": "Omer D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p502",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u105",
+            "username": "Bobi",
+            "fullname": "Bobi B",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [
+            {
+                "_id": "c5101",
+                "by": {
+                    "_id": "u104",
+                    "username": "Dandi",
+                    "fullname": "Dan D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c5102",
+                "by": {
+                    "_id": "u111",
+                    "username": "Sharoni",
+                    "fullname": "Sharon Levi",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            },
+            {
+                "_id": "c5103",
+                "by": {
+                    "_id": "u107",
+                    "username": "Omer",
+                    "fullname": "Omer D",
+                    "imgUrl": "http://some-img"
+                },
+                "txt": "Lorem ipsum consectetur adipisicing."
+            }
+        ],
+        "likedBy": [
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+
+        ]
+    },
+    {
+        "_id": "p503",
+        "txt": "Lorem ipsum dolor sit amet.",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "by": {
+            "_id": "u105",
+            "username": "Bobi",
+            "fullname": "Bobi B",
+            "imgUrl": "http://some-img"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "comments": [],
+        "likedBy": [
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "tags": [
+            "fun"
+        ]
+    }
+]

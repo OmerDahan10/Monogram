@@ -1,0 +1,1173 @@
+[
+    {
+        "_id": "u101",
+        "username": "Muki",
+        "password": "mukmuk",
+        "fullname": "Muki Muk",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p101",
+            "p102",
+            "p103"
+        ]
+    },
+    {
+        "_id": "u102",
+        "username": "Shuki",
+        "password": "shukshuk",
+        "fullname": "Shuki Gabay",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p201",
+            "p202",
+            "p203"
+        ]
+    },
+    {
+        "_id": "u103",
+        "username": "YarD",
+        "password": "yardenden",
+        "fullname": "Yarden D",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p301",
+            "p302",
+            "p303"
+        ]
+    },
+    {
+        "_id": "u104",
+        "username": "Dandi",
+        "password": "dandan",
+        "fullname": "Dan D",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p401",
+            "p402",
+            "p403"
+        ]
+    },
+    {
+        "_id": "u105",
+        "username": "Bobi",
+        "password": "bobobi",
+        "fullname": "Bobi B",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p501",
+            "p502",
+            "p503"
+        ]
+    },
+    {
+        "_id": "u106",
+        "username": "Dor1",
+        "password": "dorco",
+        "fullname": "Dor Cohen",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p601",
+            "p602",
+            "p603"
+        ]
+    },
+    {
+        "_id": "u107",
+        "username": "Omer",
+        "password": "omermer",
+        "fullname": "Omer D",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p701",
+            "p702",
+            "p703"
+        ]
+    },
+    {
+        "_id": "u108",
+        "username": "Avi21",
+        "password": "avico",
+        "fullname": "Avi Cohen",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p801",
+            "p802",
+            "p803"
+        ]
+    },
+    {
+        "_id": "u109",
+        "username": "Naamonet",
+        "password": "naamama",
+        "fullname": "Naama Silver",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+
+        ],
+        "savedStoryIds": [
+            "p901",
+            "p902",
+            "p903"
+        ]
+    },
+    {
+        "_id": "u110",
+        "username": "Beno",
+        "password": "benben",
+        "fullname": "Ben Amar",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u111",
+                "username": "Sharoni",
+                "fullname": "Sharon Levi",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p1001",
+            "p1002",
+            "p1003"
+        ]
+    },
+    {
+        "_id": "u111",
+        "username": "Sharoni",
+        "password": "sharonron",
+        "fullname": "Sharon Levi",
+        "imgUrl": "http://some-img",
+        "createdAt": 123543452,
+        "following": [
+            {
+                "_id": "u101",
+                "username": "Muki",
+                "fullname": "Muki Muk",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u102",
+                "username": "Shuki",
+                "fullname": "Shuki Gabay",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u103",
+                "username": "YarD",
+                "fullname": "Yarden D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u104",
+                "username": "Dandi",
+                "fullname": "Dan D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u105",
+                "username": "Bobi",
+                "fullname": "Bobi B",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u106",
+                "username": "Dor1",
+                "fullname": "Dor Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u107",
+                "username": "Omer",
+                "fullname": "Omer D",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u108",
+                "username": "Avi21",
+                "fullname": "Avi Cohen",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u109",
+                "username": "Naamonet",
+                "fullname": "Naama Silver",
+                "imgUrl": "http://some-img"
+            },
+            {
+                "_id": "u110",
+                "username": "Beno",
+                "fullname": "Ben Amar",
+                "imgUrl": "http://some-img"
+            }
+        ],
+        "savedStoryIds": [
+            "p1101",
+            "p1102",
+            "p1103"
+        ]
+    }
+]

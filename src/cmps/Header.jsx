@@ -9,9 +9,9 @@ export function Header(){
         <header className="header">
             <div className="header-container">
                
-            <h1 className="logo">Photogram</h1>
+            <NavLink className='clean-link' to={'/'}><h1 className="logo">Photogram</h1></NavLink>
             <div className="main-nav">
-               <NavLink to={'/'}><HomeIcon/></NavLink>
+               <NavLink className='clean-link' to={'/'}><HomeIcon/></NavLink>
             </div>
             </div>
         </header>

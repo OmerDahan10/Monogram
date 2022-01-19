@@ -6,6 +6,13 @@ body{
   background-color: rgb(245, 245, 245);
 }
 
+//HELPERS
+.clean-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+
 //FONTS
 
 @font-face{
@@ -16,4 +23,5 @@ body{
 //CMPS
 
 @import './cmps/header.scss'
+
 
