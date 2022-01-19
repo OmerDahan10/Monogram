@@ -1,11 +1,11 @@
 import { storageService } from "./async-storage.service.js";
 
 
-const posts = require('../data/user.json');
+const posts = require('../data/post.json');
 
 
 function getPosts() {
-    storageService.saveToStorage('users',posts);
+    storageService.saveToStorage('posts',posts);
     return posts
 }
 
