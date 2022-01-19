@@ -4,44 +4,44 @@
         "username": "Muki",
         "password": "mukmuk",
         "fullname": "Muki Muk",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -49,49 +49,49 @@
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -105,44 +105,44 @@
         "username": "Shuki",
         "password": "shukshuk",
         "fullname": "Shuki Gabay",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -150,43 +150,43 @@
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -200,44 +200,44 @@
         "username": "YarD",
         "password": "yardenden",
         "fullname": "Yarden D",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -245,49 +245,49 @@
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -301,56 +301,56 @@
         "username": "Dandi",
         "password": "dandan",
         "fullname": "Dan D",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -358,55 +358,55 @@
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -420,56 +420,56 @@
         "username": "Bobi",
         "password": "bobobi",
         "fullname": "Bobi B",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -477,37 +477,37 @@
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -521,50 +521,50 @@
         "username": "Dor1",
         "password": "dorco",
         "fullname": "Dor Cohen",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -572,61 +572,61 @@
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -640,56 +640,56 @@
         "username": "Omer",
         "password": "omermer",
         "fullname": "Omer D",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             }
         ],
         "followers": [
@@ -697,55 +697,55 @@
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -759,26 +759,26 @@
         "username": "Avi21",
         "password": "avico",
         "fullname": "Avi Cohen",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "followers": [
@@ -786,61 +786,61 @@
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -854,68 +854,68 @@
         "username": "Naamonet",
         "password": "naamama",
         "fullname": "Naama Silver",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "followers": [
@@ -923,61 +923,61 @@
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
 
         ],
@@ -992,67 +992,68 @@
         "username": "Beno",
         "password": "benben",
         "fullname": "Ben Amar",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u111",
+                "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "followers": [
@@ -1060,13 +1061,13 @@
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u111",
                 "username": "Sharoni",
                 "fullname": "Sharon Levi",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg"
             }
         ],
         "savedStoryIds": [
@@ -1080,68 +1081,68 @@
         "username": "Sharoni",
         "password": "sharonron",
         "fullname": "Sharon Levi",
-        "imgUrl": "http://some-img",
+        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Sharon_jztrlr.jpg",
         "createdAt": 123543452,
         "following": [
             {
                 "_id": "u101",
                 "username": "Muki",
                 "fullname": "Muki Muk",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592046/insta/Profile%20Photos/Muki_Muk_kjzum9.jpg"
             },
             {
                 "_id": "u102",
                 "username": "Shuki",
                 "fullname": "Shuki Gabay",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Shuki_Gabay_ssvnfo.jpg"
             },
             {
                 "_id": "u103",
                 "username": "YarD",
                 "fullname": "Yarden D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Yarden_D_nud2g6.jpg"
             },
             {
                 "_id": "u104",
                 "username": "Dandi",
                 "fullname": "Dan D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dan_D_mra8nj.jpg"
             },
             {
                 "_id": "u105",
                 "username": "Bobi",
                 "fullname": "Bobi B",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Bobi_B_dogvc1.jpg"
             },
             {
                 "_id": "u106",
                 "username": "Dor1",
                 "fullname": "Dor Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Dor_Cohen_mct0wp.jpg"
             },
             {
                 "_id": "u107",
                 "username": "Omer",
                 "fullname": "Omer D",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Omer_D_f4pzyv.jpg"
             },
             {
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             }
         ],
         "followers": [
@@ -1149,19 +1150,19 @@
                 "_id": "u108",
                 "username": "Avi21",
                 "fullname": "Avi Cohen",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592047/insta/Profile%20Photos/Avi_Cohen_bn1jxa.jpg"
             },
             {
                 "_id": "u109",
                 "username": "Naamonet",
                 "fullname": "Naama Silver",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592048/insta/Profile%20Photos/Naama_Silver_hwai3i.webp"
             },
             {
                 "_id": "u110",
                 "username": "Beno",
                 "fullname": "Ben Amar",
-                "imgUrl": "http://some-img"
+                "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592045/insta/Profile%20Photos/Ben_Amar_hejwwq.jpg"
             }
         ],
         "savedStoryIds": [
