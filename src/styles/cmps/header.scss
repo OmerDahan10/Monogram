@@ -1,0 +1,29 @@
+.header{
+    background-color: rgb(253, 253, 253);
+    width: 100vw;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+
+
+.header-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 3.8rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    background-color: rgb(253, 253, 253);
+    max-width:975px;
+    margin: 0 auto;
+    
+
+    .logo{
+        font-family: 'cookie';
+        font-weight:500;
+        // font-weight:600;
+        margin: 0;
+    }
+}

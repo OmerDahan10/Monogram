@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(245, 245, 245);
+}
+
+//FONTS
+
+@font-face{
+  font-family: 'cookie';
+  src: url('./fonts/Cookie-Regular.ttf');
+}
+
+//CMPS
+
+@import './cmps/header.scss'
+
