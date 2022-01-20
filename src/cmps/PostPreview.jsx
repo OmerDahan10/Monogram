@@ -1,14 +1,20 @@
 import { ReactComponent as LikeIcon } from "../img/svg/like.svg";
 import { ReactComponent as CommentIcon } from "../img/svg/comment.svg";
+import { ReactComponent as UnlikeIcon } from "../img/svg/unlike.svg";
 import { timeSince } from "../services/utils.service.js";
 
-export function PostPreview({ post }) {
+export function PostPreview({ user,post }) {
+
+    // checkIfliked = ()=>{
+    //     const likedIds = post.likedBy.map(user => user._id);
+    //     likedIds.contains(user._id) ? <UnlikeIcon /> : <LikeIcon/>;
+    // }
   return (
     <div className="post">
       <div className="post-header">
         <section className="post-user">
           <img src={post.by.imgUrl} />
-          <h2>{post.by.username}</h2>
+          <span>{post.by.username}</span>
         </section>
       </div>
       <div className="post-img">
@@ -16,10 +22,10 @@ export function PostPreview({ post }) {
       </div>
       <div className="post-utils">
         <section className="post-actions">
-          <button className="like">
-            <LikeIcon />
+          <button className="like clean-button">
+            <LikeIcon/>
           </button>
-          <button className="comments">
+          <button className="comments clean-button">
             <CommentIcon />
           </button>
         </section>
@@ -28,10 +34,10 @@ export function PostPreview({ post }) {
         </section>
         <section className="post-comments">
           <div>
-            <h3>{post.by.username}</h3>
-            <span>{post.txt}</span>
+            <span className="post-username">{post.by.username}</span>
+            <span className="post-text">{post.txt}</span>
           </div>
-          <span>View all {post.comments.length} comments</span>
+          <span className="all-comments">View all {post.comments.length} comments</span>
         </section>
         <section className="post-time">
           <span>{timeSince(post.createdAt)}</span>
