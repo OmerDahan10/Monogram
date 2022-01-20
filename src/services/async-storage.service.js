@@ -8,12 +8,24 @@ export const storageService = {
     saveToStorage
 }
 
-function query(entityType, delay = 500) {
+function query(entityType,user, delay = 500) {
     var entities = JSON.parse(localStorage.getItem(entityType)) || []
-
+    if(entities.length > 0){
+        let followings = user.followings.map(following => following._id);
+        entities = entities.filter(entity => {
+            return followings.includes(entity.by._id);
+        //    return user.followings.forEach(following => {
+        //        if(following._id === entity.by._id){
+        //            console.log(entity)
+        //            return true;
+        //        }
+        //    })
+        } )
+    }
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
             // reject('OOOOPs')
+            // console.log(entities)
             resolve(entities)
         }, delay)   
     })

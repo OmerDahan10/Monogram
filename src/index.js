@@ -5,12 +5,15 @@ import { Provider } from 'react-redux';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { RootCmp } from './RootCmp';
+import { store } from './store/store.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <RootCmp />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <RootCmp />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
