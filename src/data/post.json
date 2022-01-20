@@ -943,7 +943,7 @@
     {
         "_id": "p503",
         "txt": "EL GLACIAR",
-        "imgUrl": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592833/insta/Post%27s%20Photos/El-Glaciar_mi9t5k.jpg",
+        "imgUrlgit": "https://res.cloudinary.com/dk976zgyr/image/upload/v1642592833/insta/Post%27s%20Photos/El-Glaciar_mi9t5k.jpg",
         "createdAt": 123543452,
         "by": {
             "_id": "u105",

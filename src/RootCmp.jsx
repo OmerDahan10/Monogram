@@ -5,9 +5,9 @@ import { Header } from "./cmps/Header.jsx";
 import { postService } from "./services/post.service.js";
 
 export function RootCmp() {
-  useEffect(() => {
-    postService.getPosts();
-  }, []);
+  // useEffect(() => {
+  //   postService.getPosts();
+  // }, []);
 
   return (
     <div className="App">
