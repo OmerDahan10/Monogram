@@ -1,14 +1,29 @@
 import { storageService } from "./async-storage.service.js";
 
 
-const posts = require('../data/post.json');
+// const posts = require('../data/post.json');
 
 
-function getPosts() {
-    storageService.saveToStorage('posts',posts);
-    return posts
-}
+// function getPosts() {
+//     storageService.saveToStorage('posts',posts);
+//     return posts
+// }
 
 export const postService ={
-    getPosts
+    loadPosts,
+    updatePost,
+    deletePost
+}
+
+export function loadPosts(user) {
+   return storageService.query('posts',user).then(res=> res);
+
+}
+
+export function updatePost(post) {
+    return storageService.put('posts',post);
+}
+
+export function deletePost(postId){
+    return storageService.remove('posts',postId);
 }

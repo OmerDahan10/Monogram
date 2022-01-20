@@ -1,0 +1,26 @@
+.post{
+    // height:  900px;
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    .post-header{
+       .post-user{
+           display: flex;
+           align-items: center;
+           gap: 1rem;
+           font-size:14px ;
+          img{
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+          }
+       }
+    }
+
+    .post-img{
+        img{
+            max-width: 600px;
+        }
+    }
+}
