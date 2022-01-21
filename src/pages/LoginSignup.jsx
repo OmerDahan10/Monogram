@@ -11,10 +11,9 @@ import { HomePage } from '../pages/HomePage.jsx'
 
 class _LoginSignup extends React.Component {
     state = {
-        // credentials: userService.getEmptyUser(),
-        credentials: storageService.loadFromStorage('loggedinUser'),
+        credentials: userService.getEmptyUser(),
+        // credentials: storageService.loadFromStorage('loggedinUser'),
         isSignup: false
-        // isSignup: true
     }
 
 

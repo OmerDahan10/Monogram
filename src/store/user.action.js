@@ -12,12 +12,10 @@ import { storageService } from '../services/async-storage.service.js'
 //         }
 //     }
 // }
-export function login(credentials) {
-    const users = storageService.loadFromStorage("users")
-    credentials = users[0];
-    // return new Promise(credentials);
-    // return ({type: 'SET_USER', credentials})
 
+export function login() {
+    const user = storageService.loadFromStorage("users")
+    const credentials = user[0];
     return async (dispatch) => {
         try {
             const user = await userService.login(credentials)
@@ -39,17 +37,17 @@ export function signup(credentials) {
     }
 }
 
-export function logout() {
-    return async (dispatch) => {
-        try {
-            await userService.logout()
-            dispatch({ type: 'SET_USER', user: null })
+// export function logout() {
+//     return async (dispatch) => {
+//         try {
+//             await userService.logout()
+//             dispatch({ type: 'SET_USER', user: null })
 
-        } catch (err) {
-            console.log('Cannot logout');
-        }
-    }
-}
+//         } catch (err) {
+//             console.log('Cannot logout');
+//         }
+//     }
+// }
 
 // export function loadUser() {
 //     return async (dispatch) => {

@@ -19,35 +19,42 @@ export const userService = {
     getEmptyUser,
 }
 
-async function login(credentials) {
-    console.log('cred in services', credentials);
-    // storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, credentials);
-    try {
-        // const user = await axios.post(`http://localhost:3030/api/login`, credentials)
-        // const user = await axios.post(`http://localhost:3000`, credentials)
-        const user = credentials;
-        // _setLoggedinUser()
-        return user
-        // return user
+// async function login(credentials) {
+//     console.log('cred in services', credentials);
+//     // storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, credentials);
+//     try {
+//         // const user = await axios.post(`http://localhost:3000`, credentials)
+//         const user = await axios.get(`http://localhost:3000`, credentials)
+//         _setLoggedinUser(user)
+//         console.log('user1: ',user);
+//         return user.data
+//     } catch (err) {
+//         console.log('userserivce-front-eror', err)
+//     }
+// }
 
-    } catch (err) {
-        console.log('userserivce-front-eror', err)
+// async function signup(userInfo) {
+//     try {
+//         const user = await axios.post(`http://localhost:3000/api/signup`, userInfo)
+//         _setLoggedinUser(user.data)
+//         return user.data
+//     } catch (err) {
+//         console.log('userserivce-front-eror', err)
+//     }
+// }
 
-    }
+function login(user){
+storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, user)
+_setLoggedinUser(user)
+return user
 }
 
-async function signup(userInfo) {
-    try {
-        const user = await axios.post(`http://localhost:3000/api/signup`, userInfo)
-        _setLoggedinUser(user.data)
-        return user.data
-    } catch (err) {
-        console.log('userserivce-front-eror', err)
-    }
+function signup(){
+
 }
 
 function getLoggedinUser() {
-    return storageService.loadFromStorage('loggedinUser');
+    return storageService.loadFromStorage(STORAGE_KEY_LOGGEDIN);
     // return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN))
 }
 
