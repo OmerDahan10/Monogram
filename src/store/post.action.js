@@ -7,10 +7,10 @@ export function loadPosts(){
     return async (dispatch,getState)=>{
         try{
             const state = getState();
-            // const user = state.userModule.connectedUser
-            const user = users[0];
+            const user = state.userModule.connectedUser
+            // const user = users[0];
             const posts = await postService.loadPosts(user);
-            console.log(posts)
+            // console.log(posts)
             dispatch({type:'LOAD_POSTS',posts});
         } catch (err){
             console.log('error loading posts',err);
@@ -19,12 +19,13 @@ export function loadPosts(){
     }
 }
 
-export function updatePost(postId){
+export function updatePost(post){
     return async (dispatch,getState)=>{
         try{
-            const state = getState();
-            const post = state.postModule.posts.find(post => post._id === postId);
-            await postService.updatePost(post);
+            const user = users[0];
+            // const state = getState();
+            // const post = state.postModule.posts.find(post => post._id === postId);
+            await postService.updatePost(post,user);
             dispatch({type:'UPDATE_POST',post})
         }catch (err){
             console.log('cannot update post',err);

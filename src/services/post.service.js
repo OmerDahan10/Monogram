@@ -20,8 +20,8 @@ export function loadPosts(user) {
 
 }
 
-export function updatePost(post) {
-    return storageService.put('posts',post);
+export function updatePost(post,user) {
+    return storageService.put('posts',post,user);
 }
 
 export function deletePost(postId){

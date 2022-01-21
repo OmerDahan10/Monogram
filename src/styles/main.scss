@@ -4,6 +4,7 @@
 
 body{
   background-color: rgb(245, 245, 245);
+  margin: 0;
 }
 
 html{
@@ -15,6 +16,14 @@ html{
   text-decoration: none;
   color: inherit;
 }
+
+.clean-button{
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
 
 
 //FONTS

@@ -8,7 +8,7 @@ export function postReducer(state = initialState, action) {
     let newState = state;
     switch (action.type) {
         case 'LOAD_POSTS':
-            console.log(action)
+            // console.log(action)
             newState = { ...state, posts: action.posts }
             break;
         case 'UPDATE_POST':

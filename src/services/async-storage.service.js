@@ -52,8 +52,8 @@ function post(entityType, newEntity) {
 
 
 
-function put(entityType, updatedEntity) {
-    return query(entityType)
+function put(entityType, updatedEntity,user) {
+    return query(entityType,user)
         .then(entities => {
             const idx = entities.findIndex(entity => entity._id === updatedEntity._id)
             entities.splice(idx, 1, updatedEntity)

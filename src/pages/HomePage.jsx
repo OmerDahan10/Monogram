@@ -2,26 +2,39 @@ import React from "react";
 import { connect } from "react-redux";
 import { PostList } from "../cmps/PostList.jsx";
 import {loadPosts,updatePost,deletePost} from "../store/post.action.js";
-import {login,logout,signup} from "../store/user.action.js";
-import { storageService } from '../services/async-storage.service'
+import {login,logout} from "../store/user.action.js";
+import {storageService} from "../services/async-storage.service.js"
 // import { NavLink } from "react-router-dom";
 
 
 class _HomePage extends React.Component{
 
     componentDidMount() {
-        console.log(123);
         this.props.loadPosts();
+        this.props.login();
+        // console.log(this.props);
+    }
+
+    onToggleLike = (postId,isLiked)=>{
+        console.log(isLiked);
+        const connectedUser = storageService.loadFromStorage('loggedinUser');
+        const post = this.props.posts.find(post=> post._id === postId);
+        if(isLiked){
+           post.likedBy = post.likedBy.filter(user=>user._id !== connectedUser._id)
+        }else{
+            post.likedBy.unshift(connectedUser);
+        }
+        this.props.updatePost(post);
     }
     
     render(){
-        const user = storageService.loadFromStorage('loggedinUser');
-        console.log(user);
+        const {user} = this.props
+        // console.log('user: ',user);
         const {posts} = this.props;
-        console.log(posts);
+        // console.log(posts);
         return(
             <div>
-               <PostList posts = {posts} />
+               <PostList posts = {posts} user = {user} onToggleLike={this.onToggleLike} />
             </div>
         )
     }
@@ -30,7 +43,7 @@ class _HomePage extends React.Component{
 function mapStateToProps(state){
     return{
         posts:state.postModule.posts,
-        users:state.userModule.users
+        user:state.userModule.connectedUser
     }
 }
 
@@ -40,7 +53,6 @@ const mapDispatchToProps ={
     deletePost,
     login,
     // logout,
-    // signup,
 }
 
 export const HomePage = connect(mapStateToProps,mapDispatchToProps)(_HomePage)
