@@ -3,9 +3,11 @@ import { applyMiddleware, combineReducers, compose } from "redux";
 import {default as thunk } from "redux-thunk";
 
 import { postReducer } from "./post.reducer.js";
+import { userReducer } from "./user.reducer.js";
 
 const rootReducer = combineReducers({
-    postModule: postReducer
+    postModule: postReducer,
+    userModule: userReducer,
 })
 
 
