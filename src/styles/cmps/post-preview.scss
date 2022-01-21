@@ -1,15 +1,22 @@
 .post{
+    box-sizing: unset;
+    font-size: 14px;
     // height:  900px;
-    max-width: 600px;
-    width: 100%;
+    // max-width: 600px;
+    // width: 100vw;
+    flex-grow: 1;
     background-color: white;
     border: 1px solid rgb(211, 211, 211);
     .post-header{
+        height: 50px;
        .post-user{
            display: flex;
            align-items: center;
            gap: 1rem;
-           font-size:14px ;
+           height: 100%;
+           padding-inline-start: 1rem;
+           font-size:14px;
+           font-weight: 500;
           img{
               width: 30px;
               height: 30px;
@@ -19,8 +26,52 @@
     }
 
     .post-img{
+        max-width: 600px;
         img{
             max-width: 600px;
         }
+    }
+
+    .post-utils{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .post-actions{
+           display: flex;
+           gap: 1rem;
+        }
+
+        .post-comments{
+            line-height: 1.7;
+            .post-username{
+                font-weight: 500;
+                margin-inline-end: 0.4rem;
+            }
+
+            .all-comments{
+                color: grey;
+            }
+        }
+
+        .post-time{
+            font-size: 11px;
+            color: grey;
+        }
+
+        .liked{
+            // background-color: red;
+            // fill:red;
+            // stroke: red;
+            // opacity: 0;
+            
+        }
+    }
+}
+
+@media (min-width:600px){
+    .post{
+        max-width: 600px;
     }
 }
