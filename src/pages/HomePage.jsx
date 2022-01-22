@@ -26,6 +26,24 @@ class _HomePage extends React.Component{
         }
         this.props.updatePost(post);
     }
+
+    onAddComment = (postId,text) =>{
+        const connectedUser = storageService.loadFromStorage('loggedinUser');
+        const post = this.props.posts.find(post=> post._id === postId);
+        const comment ={
+            _id: storageService.makeId(),
+            by:{
+                _id: connectedUser._id,
+                username: connectedUser.username,
+                fullname: connectedUser.fullname,
+                imgUrl: connectedUser.imgUrl
+            },
+            txt:text
+        }
+        post.comments.unshift(comment);
+        this.props.updatePost(post);
+
+    }
     
     render(){
         const {user} = this.props
@@ -34,7 +52,7 @@ class _HomePage extends React.Component{
         // console.log(posts);
         return(
             <div>
-               <PostList posts = {posts} user = {user} onToggleLike={this.onToggleLike} />
+               <PostList posts = {posts} user = {user} onToggleLike={this.onToggleLike} onAddComment = {this.onAddComment} />
             </div>
         )
     }

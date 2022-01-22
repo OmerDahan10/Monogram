@@ -25,8 +25,8 @@ export function updatePost(post){
             const user = users[0];
             // const state = getState();
             // const post = state.postModule.posts.find(post => post._id === postId);
-            await postService.updatePost(post,user);
             dispatch({type:'UPDATE_POST',post})
+            await postService.updatePost(post,user);
         }catch (err){
             console.log('cannot update post',err);
         }

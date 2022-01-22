@@ -60,27 +60,56 @@
 //   );
 // }
 
-
-
+import React, { useState } from "react";
 import { ReactComponent as LikeIcon } from "../img/svg/like.svg";
 import { ReactComponent as CommentIcon } from "../img/svg/comment.svg";
 import { ReactComponent as UnlikeIcon } from "../img/svg/unlike.svg";
+import { ReactComponent as EmojiIcon } from "../img/svg/emoji.svg";
 import { timeSince } from "../services/utils.service.js";
+import "animate.css";
+import Picker from "emoji-picker-react";
+import TextareaAutosize from "react-textarea-autosize";
 
-export function PostPreview({ post, user, onToggleLike }) {
+export function PostPreview({ post, user, onToggleLike,onAddComment }) {
+  const [showPicker, setShowPicker] = useState(false);
+  const [showPostBtn, setShowPostBtn] = useState(false);
+  const [inputStr, setInputStr] = useState("");
+
+  const handleChange = (ev) => {
+    ev.target.value.length > 0 ? setShowPostBtn(true) : setShowPostBtn(false);
+    setInputStr(ev.target.value);
+  };
+
+  const onEmojieClick = (ev, emojiObj) => {
+    setInputStr((prevInput) => prevInput + emojiObj.emoji);
+    inputStr.length > 0 ? setShowPostBtn(true) : setShowPostBtn(false);
+  };
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+    onAddComment(post._id,inputStr);
+    setInputStr('');
+
+  };
+
   const checkIfliked = () => {
     // console.log(user);
     const likedIds = post.likedBy.map((like) => like._id);
-    console.log(likedIds);
     if (likedIds.includes(user._id)) {
       return (
-        <button className="like clean-button" onClick={()=>onToggleLike(post._id,true)}>
+        <button
+          className="unlike clean-button"
+          onClick={() => onToggleLike(post._id, true)}
+        >
           <UnlikeIcon />
         </button>
       );
-    } else{
+    } else {
       return (
-        <button className="like clean-button" onClick={()=>onToggleLike(post._id,false)}>
+        <button
+          className="like clean-button"
+          onClick={() => onToggleLike(post._id, false)}
+        >
           <LikeIcon />
         </button>
       );
@@ -92,6 +121,9 @@ export function PostPreview({ post, user, onToggleLike }) {
         <section className="post-user">
           <img src={post.by.imgUrl} />
           <span>{post.by.username}</span>
+        </section>
+        <section className="post-options">
+          <button className="clean-button">•••</button>
         </section>
       </div>
       <div className="post-img">
@@ -119,6 +151,34 @@ export function PostPreview({ post, user, onToggleLike }) {
         <section className="post-time">
           <span>{timeSince(post.createdAt)}</span>
         </section>
+      </div>
+      <div className="add-comment">
+        <form action="">
+          <button
+            className="clean-button"
+            type="button"
+            onClick={() => setShowPicker((val) => !val)}
+          >
+            <EmojiIcon />
+          </button>
+          {showPicker && <Picker onEmojiClick={onEmojieClick} />}
+          <TextareaAutosize
+            value={inputStr}
+            onChange={handleChange}
+            maxRows="4"
+            className="comment-text"
+            placeholder="Add a comment..."
+          />
+          <button
+            className={
+              showPostBtn ? `clean-button submit active` : "clean-button submit"
+            }
+            type="submit"
+            onClick={handleSubmit}
+          >
+            Post
+          </button>
+        </form>
       </div>
     </div>
   );
