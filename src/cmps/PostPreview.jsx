@@ -89,7 +89,7 @@ export function PostPreview({ post, user, onToggleLike,onAddComment }) {
     ev.preventDefault();
     onAddComment(post._id,inputStr);
     setInputStr('');
-
+    setShowPostBtn(false)
   };
 
   const checkIfliked = () => {
