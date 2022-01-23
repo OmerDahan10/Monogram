@@ -61,6 +61,7 @@
 // }
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as LikeIcon } from "../img/svg/like.svg";
 import { ReactComponent as CommentIcon } from "../img/svg/comment.svg";
 import { ReactComponent as UnlikeIcon } from "../img/svg/unlike.svg";
@@ -70,7 +71,13 @@ import "animate.css";
 import Picker from "emoji-picker-react";
 import TextareaAutosize from "react-textarea-autosize";
 
-export function PostPreview({ post, user, onToggleLike,onAddComment }) {
+export function PostPreview({
+  post,
+  user,
+  onToggleLike,
+  onAddComment,
+  postDetails = false,
+}) {
   const [showPicker, setShowPicker] = useState(false);
   const [showPostBtn, setShowPostBtn] = useState(false);
   const [inputStr, setInputStr] = useState("");
@@ -87,9 +94,9 @@ export function PostPreview({ post, user, onToggleLike,onAddComment }) {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    onAddComment(post._id,inputStr);
-    setInputStr('');
-    setShowPostBtn(false)
+    onAddComment(post._id, inputStr);
+    setInputStr("");
+    setShowPostBtn(false);
   };
 
   const checkIfliked = () => {
@@ -133,7 +140,7 @@ export function PostPreview({ post, user, onToggleLike,onAddComment }) {
         <section className="post-actions">
           {checkIfliked()}
           <button className="comments clean-button">
-            <CommentIcon />
+            <Link className="clean-link" to={`/p/${post._id}`}><CommentIcon /></Link> 
           </button>
         </section>
         <section className="post-likes">
@@ -144,9 +151,9 @@ export function PostPreview({ post, user, onToggleLike,onAddComment }) {
             <span className="post-username">{post.by.username}</span>
             <span className="post-text">{post.txt}</span>
           </div>
-          <span className="all-comments">
-            View all {post.comments.length} comments
-          </span>
+          {!postDetails && <span className="all-comments">
+            <Link className="clean-link" to={`/p/${post._id}`}>View all {post.comments.length} comments</Link>
+          </span>}
         </section>
         <section className="post-time">
           <span>{timeSince(post.createdAt)}</span>
@@ -180,6 +187,27 @@ export function PostPreview({ post, user, onToggleLike,onAddComment }) {
           </button>
         </form>
       </div>
+
+      {postDetails && (
+        <div className="show-comments">
+          {post.comments.map((comment) => {
+            return <div className="comment">
+              <div className="comment-details">
+
+              <img src={comment.by.imgUrl} />
+              <section className="comment-user">
+                <div className="comment-user-text">
+                  <span className="comment-username">
+                    {comment.by.username}
+                  </span>
+                  <span className="comment-text">{comment.txt}</span>
+                </div>
+              </section>
+              </div>
+            </div>;
+          })}
+        </div>
+      )}
     </div>
   );
 }

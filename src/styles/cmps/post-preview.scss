@@ -148,6 +148,7 @@
             // justify-content: space-between;
             align-items: center;
             border-top:1px solid rgb(211, 211, 211) ;
+            border-bottom:1px solid rgb(211, 211, 211) ;
             padding: 0.8rem;
             gap: 1rem;
             position: relative;
@@ -186,6 +187,29 @@
             .emoji-picker-react{
                 position: absolute;
                 top: 100%;
+            }
+        }
+    }
+
+    .show-comments{
+        // padding: 1rem;
+        display: flex;
+        flex-direction: column;
+            // gap: 1rem;
+        .comment{
+            border-bottom:1px solid rgb(211, 211, 211) ;
+            padding: 1rem;
+        }    
+        .comment-details{
+            // width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            
+            img{
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
             }
         }
     }

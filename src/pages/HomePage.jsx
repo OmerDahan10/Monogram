@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { PostList } from "../cmps/PostList.jsx";
 import {loadPosts,updatePost,deletePost} from "../store/post.action.js";
 import {login,logout} from "../store/user.action.js";
-import {storageService} from "../services/async-storage.service.js"
+import {storageService} from "../services/async-storage.service.js";
 // import { NavLink } from "react-router-dom";
 
 
