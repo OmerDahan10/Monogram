@@ -47,7 +47,7 @@ export function _PostDetails({
         fullname: connectedUser.fullname,
         imgUrl: connectedUser.imgUrl,
       },
-      txt: text,
+      txt: text
     };
     post.comments.unshift(comment);
     updatePost(post);
