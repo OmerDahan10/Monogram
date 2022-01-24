@@ -11,7 +11,7 @@ class _HomePage extends React.Component{
 
     componentDidMount() {
         this.props.loadPosts();
-        this.props.login();
+        // this.props.login();
         // console.log(this.props);
     }
 
@@ -69,7 +69,7 @@ const mapDispatchToProps ={
     loadPosts,
     updatePost,
     deletePost,
-    login,
+    // login,
     // logout,
 }
 

@@ -6,9 +6,9 @@ var axios = Axios.create({
 })
 
 const users = require("../data/user.json")
-storageService.saveToStorage('loggedinUser', users[0])
+// storageService.saveToStorage('loggedinUser', users[0])
 
-const STORAGE_KEY = 'user'
+const STORAGE_KEY = 'users'
 const STORAGE_KEY_LOGGEDIN = 'loggedinUser'
 
 export const userService = {
@@ -19,38 +19,18 @@ export const userService = {
     getEmptyUser,
 }
 
-// async function login(credentials) {
-//     console.log('cred in services', credentials);
-//     // storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, credentials);
-//     try {
-//         // const user = await axios.post(`http://localhost:3000`, credentials)
-//         const user = await axios.get(`http://localhost:3000`, credentials)
-//         _setLoggedinUser(user)
-//         console.log('user1: ',user);
-//         return user.data
-//     } catch (err) {
-//         console.log('userserivce-front-eror', err)
-//     }
-// }
-
-// async function signup(userInfo) {
-//     try {
-//         const user = await axios.post(`http://localhost:3000/api/signup`, userInfo)
-//         _setLoggedinUser(user.data)
-//         return user.data
-//     } catch (err) {
-//         console.log('userserivce-front-eror', err)
-//     }
-// }
-
 function login(user){
 storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, user)
 _setLoggedinUser(user)
 return user
 }
 
-function signup(){
-
+function signup(user){
+    // async
+    storageService.saveToStorage(STORAGE_KEY, user)
+    storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, user)
+    _setLoggedinUser(user)
+    return user
 }
 
 function getLoggedinUser() {

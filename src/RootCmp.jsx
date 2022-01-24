@@ -14,7 +14,10 @@ export function RootCmp() {
 
   return (
     <div className="App">
-      <Header />
+     <Switch>
+        <Route path='/login' />
+        <Route component={Header} path='/' />
+      </Switch>
       <main>
         <Switch>
           <Route component={PostDetails} path='/p/:postId'/>
