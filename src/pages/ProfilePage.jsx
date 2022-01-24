@@ -9,7 +9,6 @@ import { storageService } from "../services/async-storage.service.js";
 class _ProfilePage extends React.Component {
 
     componentDidMount() {
-
         this.props.loadPosts();
     }
 
@@ -18,8 +17,8 @@ class _ProfilePage extends React.Component {
         
 
         return (
-
-            <div></div>
+            <div>
+            </div>
         )
     }
 

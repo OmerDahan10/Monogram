@@ -1,10 +1,10 @@
 import { userService } from '../services/user.service.js'
 import { storageService } from '../services/async-storage.service.js'
 
-const users = require("../data/user.json")
-storageService.saveToStorage("users", users)
-const posts = require("../data/post.json")
-storageService.saveToStorage("posts", posts)
+// const users = require("../data/user.json")
+// storageService.saveToStorage("users", users)
+// const posts = require("../data/post.json")
+// storageService.saveToStorage("posts", posts)
 
 const initialState = {
     // connectedUser: userService.getLoggedinUser() || null

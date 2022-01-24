@@ -10,6 +10,8 @@ import {storageService} from "../services/async-storage.service.js";
 class _HomePage extends React.Component{
 
     componentDidMount() {
+        console.log('this.props: ',this.props);
+        
         this.props.loadPosts();
         // this.props.login();
         // console.log(this.props);
