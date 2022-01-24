@@ -60,12 +60,13 @@
 //   );
 // }
 
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as LikeIcon } from "../img/svg/like.svg";
 import { ReactComponent as CommentIcon } from "../img/svg/comment.svg";
 import { ReactComponent as UnlikeIcon } from "../img/svg/unlike.svg";
 import { ReactComponent as EmojiIcon } from "../img/svg/emoji.svg";
+import { ReactComponent as MiniLikeIcon } from "../img/svg/mini-like.svg";
 import { timeSince } from "../services/utils.service.js";
 import "animate.css";
 import Picker from "emoji-picker-react";
@@ -200,8 +201,9 @@ export function PostPreview({
                   <span className="comment-username">
                     {comment.by.username}
                   </span>
-                  <span className="comment-text">{comment.txt}</span>
+                  <span className="comment-text">{comment.txt}</span>  
                 </div>
+                <button className="clean-button"><MiniLikeIcon/></button>
               </section>
               </div>
             </div>;

@@ -50,15 +50,15 @@ export function _PostDetails({
       txt: text,
     };
     post.comments.unshift(comment);
-    this.props.updatePost(post);
+    updatePost(post);
   };
 
   if (post)
     return (
       <div className="post-details">
-        <span className="exit-details">
+        {/* <span className="exit-details">
           <CloseIcon />
-        </span>
+        </span> */}
         <PostPreview
           post={post}
           user={user}
