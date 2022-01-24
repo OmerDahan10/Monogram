@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 import { NavLink, Route } from 'react-router-dom'
 
@@ -7,13 +7,15 @@ import { userService } from '../services/user.service.js';
 import { login, signup } from '../store/user.action.js';
 import { storageService } from '../services/async-storage.service'
 import { HomePage } from '../pages/HomePage.jsx'
+import { RootCmp } from '../RootCmp.jsx';
 
 
 class _LoginSignup extends React.Component {
     state = {
         credentials: userService.getEmptyUser(),
         // credentials: storageService.loadFromStorage('loggedinUser'),
-        isSignup: false
+        isSignup: false,
+        user: null,
     }
 
 
@@ -22,7 +24,7 @@ class _LoginSignup extends React.Component {
             credentials: userService.getEmptyUser(),
             isSignup: false
         }
-        this.setState(clearTemplate)
+        this.setState(clearTemplate);
     }
 
     handleChange = (ev) => {
@@ -36,85 +38,116 @@ class _LoginSignup extends React.Component {
         const { credentials } = this.state
         console.log('the crd in serv', credentials);
         if (!credentials.username || !credentials.password) return;
-        this.props.login(credentials)
-        this.clearState()
+        const user = this._checkForExistsUser(credentials.username);
+        if (!user || credentials.password !== user.password) {
+            this.clearState();
+            return;
+        }
+        this.props.login(user);
+        this.setState({ user: user });
+        console.log('user: ', user);
+        this.clearState();
+        window.location = '/';
+    }
+
+    _checkForExistsUser = (username) => {
+        const users = storageService.loadFromStorage('users');
+        const user = users.filter(user => username === user.username);
+        return user[0];
     }
 
     onSignup = (ev) => {
         ev.preventDefault();
-        const { credentials } = this.state
+        const { credentials } = this.state;
         if (!credentials.username || !credentials.password || !credentials.fullname) return;
-        this.props.signup(credentials)
-        this.clearState()
+        this.props.signup(credentials);
+        this.clearState();
+        // window.location = '/';
     }
 
     toggleSignup = () => {
-        this.setState({ isSignup: !this.state.isSignup })
+        this.setState({ isSignup: !this.state.isSignup });
     }
 
     render() {
-        console.log('credentials: ', this.state);
         const { username, password, fullname } = this.state.credentials;
         const { isSignup } = this.state;
+        const { user } = this.state;
+
         return (
-            <div className="login-page">
-                <p>
-                    <NavLink className="clean-link" onClick={this.toggleSignup} to="/login">{!isSignup ? 'Signup' : 'Login'}</NavLink>
-                </p>
-                {!isSignup && <form className="login-form" onSubmit={this.onLogin}>
-                    <input
-                        type="text"
-                        name="username"
-                        value={username}
-                        placeholder="Username"
-                        onChange={this.handleChange}
-                        required
-                        autoFocus
-                    />
-                    <input
-                        type="password"
-                        name="password"
-                        value={password}
-                        placeholder="Password"
-                        onChange={this.handleChange}
-                        required
-                    />
-                    {/* <button>Login!</button> */}
-                    <NavLink className="clean-link login" Component={HomePage} to="/">Login!</NavLink>
-                </form>}
+            <>
+                {user && <Route component={HomePage} path='/' />}
+                <div className='login-signup-page'>
+                    <div className="login-signup-container">
+                        <h1 className="logo">Photogram</h1>
+                        {!isSignup && <form className="login-form" onSubmit={this.onLogin}>
+                            <div className='user-input'>
+                                <input
+                                    type="text"
+                                    name="username"
+                                    value={username}
+                                    placeholder="Username"
+                                    onChange={this.handleChange}
+                                    required
+                                    autoFocus
+                                />
+                                <input
+                                    type="password"
+                                    name="password"
+                                    value={password}
+                                    placeholder="Password"
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                            </div>
+                            <button onClick={this.onLogin}>Log In</button>
+                        </form>}
 
-                <div className="signup-section">
-                    {isSignup && <form className="signup-form" onSubmit={this.onSignup}>
-                        <input
-                            type="text"
-                            name="fullname"
-                            value={fullname}
-                            placeholder="Fullname"
-                            onChange={this.handleChange}
-                            required
-                        />
-                        <input
-                            type="text"
-                            name="username"
-                            value={username}
-                            placeholder="Username"
-                            onChange={this.handleChange}
-                            required
-                        />
-                        <input
-                            type="password"
-                            name="password"
-                            value={password}
-                            placeholder="Password"
-                            onChange={this.handleChange}
-                            required
-                        />
-                        {/* <button >Signup!</button> */}
-                        <NavLink className="clean-link login" Component={HomePage} to="/">Login!</NavLink>
-                    </form>}
+                        {isSignup && <form className="signup-form" onSubmit={this.onSignup}>
+                            <div className='user-input'>
+                                <input
+                                    type="text"
+                                    name="fullname"
+                                    value={fullname}
+                                    placeholder="Fullname"
+                                    onChange={this.handleChange}
+                                    required
+                                    autoFocus
+                                />
+                                <input
+                                    type="text"
+                                    name="username"
+                                    value={username}
+                                    placeholder="Username"
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                                <input
+                                    type="password"
+                                    name="password"
+                                    value={password}
+                                    placeholder="Password"
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                            </div>
+                            <button onClick={this.onSignup}>Sign up</button>
+                        </form>}
+                    </div>
+                    <div className='signup-link'>
+                        {!isSignup &&
+                            <p>
+                                Don't have an account?
+                                <span><NavLink className="clean-link" onClick={this.toggleSignup} to="/login"> Signup</NavLink></span>
+                            </p>}
+                        {isSignup &&
+                            <p>
+                                Have an account?
+                                <span><NavLink className="clean-link" onClick={this.toggleSignup} to="/login"> Login</NavLink></span>
+                            </p>}
+                    </div>
                 </div>
-
-            </div>
+            </>
         )
     }
 }
