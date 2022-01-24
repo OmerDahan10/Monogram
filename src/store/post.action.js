@@ -8,6 +8,7 @@ export function loadPosts(){
         try{
             const state = getState();
             const user = state.userModule.connectedUser
+            console.log(user);
             // const user = users[0];
             const posts = await postService.loadPosts(user);
             // console.log(posts)
