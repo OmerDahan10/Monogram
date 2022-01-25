@@ -18,7 +18,7 @@ class _HomePage extends React.Component{
     }
 
     onToggleLike = (postId,isLiked)=>{
-        console.log(isLiked);
+        // console.log(isLiked);
         // const connectedUser = storageService.loadFromStorage('loggedinUser');
         const connectedUser = this.props.user;
         const post = this.props.posts.find(post=> post._id === postId);

@@ -12,12 +12,17 @@ import { storageService } from "./async-storage.service.js";
 export const postService ={
     loadPosts,
     updatePost,
-    deletePost
+    deletePost,
+    addPost
 }
 
 export function loadPosts(user) {
    return storageService.query('posts',user).then(res=> res);
 
+}
+
+export function addPost(post){
+    return storageService.post('post',post);
 }
 
 export function updatePost(post,user) {
