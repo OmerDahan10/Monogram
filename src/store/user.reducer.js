@@ -8,7 +8,7 @@ import { storageService } from '../services/async-storage.service.js'
 
 const initialState = {
     // connectedUser: userService.getLoggedinUser() || null
-    connectedUser: userService.getLoggedinUser() || storageService.loadFromStorage('users')[2]
+    connectedUser: userService.getLoggedinUser() || storageService.loadFromStorage('users')[0]
 }
 
 

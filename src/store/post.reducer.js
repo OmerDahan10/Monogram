@@ -1,5 +1,6 @@
 const initialState = {
     posts: [],
+    showAdd: false
 
 }
 

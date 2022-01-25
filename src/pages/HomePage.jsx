@@ -19,7 +19,8 @@ class _HomePage extends React.Component{
 
     onToggleLike = (postId,isLiked)=>{
         console.log(isLiked);
-        const connectedUser = storageService.loadFromStorage('loggedinUser');
+        // const connectedUser = storageService.loadFromStorage('loggedinUser');
+        const connectedUser = this.props.user;
         const post = this.props.posts.find(post=> post._id === postId);
         if(isLiked){
            post.likedBy = post.likedBy.filter(user=>user._id !== connectedUser._id)
@@ -30,7 +31,8 @@ class _HomePage extends React.Component{
     }
 
     onAddComment = (postId,text) =>{
-        const connectedUser = storageService.loadFromStorage('loggedinUser');
+        // const connectedUser = storageService.loadFromStorage('loggedinUser');
+        const connectedUser = this.props.user;
         const post = this.props.posts.find(post=> post._id === postId);
         const comment ={
             _id: storageService.makeId(),
