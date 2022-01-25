@@ -45,7 +45,7 @@ function post(entityType, newEntity) {
     newEntity._id = makeId()
     return query(entityType)
         .then(entities => {
-            entities.push(newEntity)
+            entities.unshift(newEntity)
             _save(entityType, entities)
             return newEntity
         })
