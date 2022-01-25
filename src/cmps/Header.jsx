@@ -12,10 +12,6 @@ export function Header() {
     const user = storageService.loadFromStorage('loggedinUser')
     let display = 'none'
 
-    toggleMenu = () => {
-        return display = (display === 'none') ? '' : 'none'
-    }
-
     return (
         <header className="header">
             <div className="header-container">
@@ -25,7 +21,9 @@ export function Header() {
                     <NavLink className='clean-link' to={'/'}><HomeIcon /></NavLink>
                     <NavLink className='clean-link' to={'/create'}><AddIcon /></NavLink>
                     <NavLink className='clean-link logout' to={'/login'}>Logout</NavLink>
-                    <button className="clean-button" onClick={<ProfilePage toggleMenu={this.toggleMenu()}/>}><img src={user.imgUrl} /></button>
+                    <button className="clean-button" onClick={ProfilePage}>
+                        <NavLink className="clean-link" to={`/profile/${user.username}`}><img src={user.imgUrl} /></NavLink>
+                    </button>
                     {/* <Link className="clean-link" to={`/p/${post._id}`}><CommentIcon /></Link> */}
                     {/* <NavLink className='clean-link profile-page' to={`/profile/${user.username}`}><img src={user.imgUrl} /></NavLink> */}
                 </div>
