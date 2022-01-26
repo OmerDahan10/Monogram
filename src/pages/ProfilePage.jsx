@@ -1,48 +1,73 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
-import { PostList } from "../cmps/PostList.jsx"
 import { loadPosts, updatePost, deletePost } from "../store/post.action.js";
-import { useParams } from "react-router-dom";
-import { PostPreview } from "../cmps/PostPreview";
-import { ReactComponent as CloseIcon } from "../img/svg/close.svg";
-import { storageService } from "../services/async-storage.service.js";
+import { getUser, toggleProfileOption } from "../store/user.action.js"
+import { ProfileOptions } from "../cmps/ProfileOptions.jsx";
+// import {ReactComponent as OptionIcon} from '../img/svg/'
+// import { ReactComponent as OptionIcon} from '../img/svg/'
+import { ReactComponent as OptionIcon } from '../img/svg/option.svg';
+
 
 class _ProfilePage extends React.Component {
 
     componentDidMount() {
-        this.props.loadPosts();
-        console.log('this.props: ', this.props);
-
+        this.props.getUser(this.props.match.params.username)
+        this.props.loadPosts()
+        // this.props.loadPosts(this.props.userProfileShow);
     }
 
+    onProfileOptions = () => {
+        console.log('this.props: ', this.props);
+        this.props.toggleProfileOption(this.props.showProfileOption)
+    }
 
     render() {
-        const { user } = this.props
-        // console.log('user: ',user);
-        const { posts } = this.props;
-        // console.log(posts);
+        console.log('this.props: ', this.props);
+        const { connectedUser } = this.props
+        const { userProfileShow } = this.props
+        const posts = this.props.posts.filter((post) => userProfileShow._id === post.by._id)
+        console.log(userProfileShow);
 
         return (
             <div className="profile">
-                <header className="profile-header">
-                    <img src={user.imgUrl} />
+                <section className="profile-header">
+                    <div className="photo-container">
+                        <img src={userProfileShow.imgUrl} />
+                    </div>
                     <div className="profil-user-info">
                         <section className="un-ed-o">
-                        <h2>{user.username}</h2>
-                        <button>Edit Profile</button>
-                        <button>Options</button>
+                            <h2>{userProfileShow.username}</h2>
+                            {userProfileShow._id === connectedUser._id && (
+                                <>
+                                    <button>Edit Profile</button>
+                                    <button onClick={this.onProfileOptions}><OptionIcon /></button>
+                                </>
+                            )}
+                            {userProfileShow._id !== connectedUser._id && (
+                                <>
+                                    <button>Messge</button>
+                                    <button>Unfollow</button>
+                                </>
+                            )}
+                            {/* <button >Options</button> */}
                         </section>
                         <>
-                        posts
-                        <button>followers</button>
-                        <button>following</button>
+                            {userProfileShow.userPostsIds.length} posts
+                            <button>{userProfileShow.followers.length} followers</button>
+                            <button>{userProfileShow.followings.length} following</button>
                         </>
-                        <h4>{user.fullname}</h4>
+                        <h4>{userProfileShow.fullname}</h4>
                     </div>
-                </header>
-                <section className="profil-post-list">
-                    <PostList posts={posts} user={user} onToggleLike={this.onToggleLike} onAddComment={this.onAddComment} />
                 </section>
+                <article className="profile-post-list">
+                    {/* <PostList posts={posts} user={user} onToggleLike={this.onToggleLike} onAddComment={this.onAddComment} /> */}
+                    {posts.map((post) => (
+                        <img src={post.imgUrl} />
+                        // <post.imgUrl
+                        // <ProfilePostList userProfileShow={userProfileShow}/>
+                    ))}
+                </article>
+                <ProfileOptions />
             </div>
         )
     }
@@ -50,11 +75,11 @@ class _ProfilePage extends React.Component {
 };
 
 function mapStateToProps(state) {
-    console.log('state: ', state);
     return {
-
         posts: state.postModule.posts,
-        user: state.userModule.connectedUser
+        userProfileShow: state.userModule.userProfileShow,
+        connectedUser: state.userModule.connectedUser,
+        showProfileOption: state.userModule.showProfileOption
     }
 }
 
@@ -62,6 +87,8 @@ const mapDispatchToProps = {
     loadPosts,
     updatePost,
     deletePost,
+    getUser,
+    toggleProfileOption,
 };
 
 // export const ProfilePage = connect(null, mapDispatchToProps)(_ProfilePage);

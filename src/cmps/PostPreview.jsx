@@ -128,7 +128,9 @@ export function PostPreview({
       <div className="post-header">
         <section className="post-user">
           <img src={post.by.imgUrl} />
+          <Link className="clean-link" to={`/profile/${post.by.username}`}>
           <span>{post.by.username}</span>
+          </Link>
         </section>
         <section className="post-options">
           <button className="clean-button">•••</button>
