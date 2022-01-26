@@ -1,10 +1,15 @@
+
+// @media (min-width: 975px) {
+    
 h1,h2,h3,h4,h5,h6{
     margin: 0px;
 }
 
 .profile{
+    max-width: 935px;
+    margin: auto;
     // max-width: 100vw;
-    padding: 30px 20px 0px;
+    // padding: 30px 20px 0px;
 
     .profile-header{
         display: flex;
@@ -51,3 +56,4 @@ h1,h2,h3,h4,h5,h6{
         gap: 28px;
     }
 }
+// }
