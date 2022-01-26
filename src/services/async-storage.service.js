@@ -7,7 +7,8 @@ export const storageService = {
     remove,
     saveToStorage,
     loadFromStorage,
-    makeId
+    makeId,
+    getPostsById
 }
 
 function query(entityType,user, delay = 500) {
@@ -38,6 +39,12 @@ function query(entityType,user, delay = 500) {
 function get(entityType, entityId) {
     return query(entityType)
         .then(entities => entities.find(entity => entity._id === entityId))
+}
+
+function getPostsById(userId){
+    var entities = JSON.parse(localStorage.getItem('posts')) || [];
+    entities = entities.filter(entity => entity.by._id === userId);
+    return entities;
 }
 
    

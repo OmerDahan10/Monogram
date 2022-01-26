@@ -56,6 +56,17 @@ export function addPost(post){
     }
 }
 
+export function getPostByUserId(userId){
+    return async (dispatch) =>{
+        try{
+            const userPosts = await postService.getPostByUserId(userId);
+            dispatch({type:'SET_USER_POSTS',userPosts});
+        }catch(err){
+            console.log('cannot get users posts',err);
+        }
+    }
+}
+
 export function toggleShowAdd(showAdd) {
     
     return (dispatch) => {
