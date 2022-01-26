@@ -1,0 +1,25 @@
+
+.profile-option-container{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    .profile-option-list{
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(var(--f23,255,255,255),1);
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        z-index: 1;
+        border-radius: 12px;
+    }
+}

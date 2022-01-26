@@ -64,3 +64,11 @@ export function getUser(username) {
         }
     }
 }
+
+export function toggleProfileOption(showProfileOption) {
+    return (dispatch) => {
+        if (showProfileOption) dispatch({ type: 'SHOW_PROFILE_OPTION', showProfileOption: false })
+        else dispatch({ type: 'SHOW_PROFILE_OPTION', showProfileOption: true })
+    }
+
+}

@@ -9,14 +9,15 @@ import { storageService } from '../services/async-storage.service.js'
 const initialState = {
     // connectedUser: userService.getLoggedinUser() || null
     connectedUser: userService.getLoggedinUser() || storageService.loadFromStorage('users')[0],
-    userProfileShow: userService.getUser('Muki') || null
+    userProfileShow: userService.getUser('Muki') || null,
+    showProfileOption: false
 }
 
 
 export function userReducer(state = initialState, action) {
     let newState = state
 
-    
+
     switch (action.type) {
         case 'SET_USER':
             newState = { ...state, user: action.user }
@@ -24,6 +25,8 @@ export function userReducer(state = initialState, action) {
         case 'GET_USER':
             newState = { ...state, userProfileShow: action.userProfileShow }
             break;
+        case 'SHOW_PROFILE_OPTION':
+            newState = { ...state, showProfileOption: action.showProfileOption }
         // case 'LOAD_USER':
         //     newState = { ...state, user: action.user }
         //     break;
