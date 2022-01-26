@@ -2,7 +2,7 @@ import { userService } from '../services/user.service.js';
 import { storageService } from '../services/async-storage.service.js'
 
 export function login(credentials) {
-    const user = storageService.loadFromStorage("users")
+    // const user = storageService.loadFromStorage("users")
     // const credentials = user[0];
     return async (dispatch) => {
         try {
@@ -53,3 +53,14 @@ export function signup(credentials) {
 //         }
 //     }
 // }
+export function getUser(username) {
+    return async (dispatch) => {
+        try {
+            const userProfileShow = await userService.getUser(username)
+            dispatch({ type: 'GET_USER', userProfileShow })
+
+        } catch (err) {
+            console.log('Cannot logout');
+        }
+    }
+}
