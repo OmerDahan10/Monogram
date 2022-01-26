@@ -20,7 +20,11 @@
     max-width:967px;
     margin: 0 auto;
     
-
+    .main-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .logo{
         font-family: 'cookie';
         font-weight:500;

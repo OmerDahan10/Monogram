@@ -13,12 +13,17 @@ export const postService ={
     loadPosts,
     updatePost,
     deletePost,
-    addPost
+    addPost,
+    getPostByUserId
 }
 
 export function loadPosts(user) {
    return storageService.query('posts',user).then(res=> res);
 
+}
+
+export function getPostByUserId(userId){
+    return storageService.getPostsById(userId);
 }
 
 export function addPost(post){
