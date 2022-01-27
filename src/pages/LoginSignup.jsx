@@ -33,7 +33,7 @@ class _LoginSignup extends React.Component {
         this.setState({ credentials: { ...this.state.credentials, [field]: value } });
     }
 
-    onLogin = (ev) => {
+    onLogin = async (ev) => {
         ev.preventDefault();
         const { credentials } = this.state
         console.log('the crd in serv', credentials);
@@ -43,11 +43,11 @@ class _LoginSignup extends React.Component {
             this.clearState();
             return;
         }
-        this.props.login(user);
-        this.setState({ user: user });
+        await this.props.login(user);
+        // this.setState({ user: user });
         console.log('user: ', user);
         this.clearState();
-        window.location = '/';
+        this.props.history.push('/');
     }
 
     _checkForExistsUser = (username) => {

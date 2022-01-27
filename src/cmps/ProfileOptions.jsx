@@ -1,27 +1,23 @@
 
 import React from "react";
-import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
-import { toggleShowAdd } from "../store/post.action.js";
-import TextareaAutosize from "react-textarea-autosize";
-import { ReactComponent as EmojiIcon } from "../img/svg/emoji.svg";
-import Picker from "emoji-picker-react";
-import { toggleProfileOption } from "../store/user.action.js";
+import { toggleProfileOptions } from "../store/user.action.js";
 import { Link } from "react-router-dom";
 
 
-function _ProfileOptions({ showProfileOption, toggleProfileOption }) {
+function _ProfileOptions({ showProfileOptions, toggleProfileOptions }) {
 
-  // cancel =()
-
+  console.log('showProfileOptions: ',showProfileOptions);
+  
   return (
     <>
-      {showProfileOption && (
-        <div className="profile-option-container" onClick={toggleProfileOption}>
-          <div onClick={(ev) => ev.stopPropagation()} className="profile-option-list">
+      {showProfileOptions && (
+        <div className="profile-options-container" onClick={toggleProfileOptions}>
+          <div onClick={(ev) => ev.stopPropagation()} className="profile-options-list">
             <ul>
               <button><Link className="clean-link change-password" to={`/acconts/password/change`}>Change Password</Link></button>
               <button><Link className='clean-link logout' to={'/login'}>Logout</Link></button>
+              <button className="exit-option" onClick={toggleProfileOptions}>Cancel</button>
               {/* <li><button onClick={this.Cancel}>Cancel</button></li> */}
             </ul>
           </div>
@@ -37,12 +33,12 @@ const mapStateToProps = (state) => {
     // posts: state.postModule.posts,
     // showAdd: state.postModule.showAdd,
     // user: state.userModule.connectedUser,
-    showProfileOption: state.userModule.showProfileOption,
+    showProfileOptions: state.userModule.showProfileOptions,
   };
 };
 
 const mapDispatchToProps = {
-  toggleProfileOption,
+  toggleProfileOptions,
 };
 
 export const ProfileOptions = connect(mapStateToProps, mapDispatchToProps)(_ProfileOptions);

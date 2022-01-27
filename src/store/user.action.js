@@ -4,13 +4,20 @@ import { storageService } from '../services/async-storage.service.js'
 export function login(credentials) {
     // const user = storageService.loadFromStorage("users")
     // const credentials = user[0];
+    console.log('credentials: ',credentials);
+    
     return async (dispatch) => {
         try {
             const user = await userService.login(credentials)
             dispatch({ type: 'SET_USER', user })
+            dispatch({type: 'CLEAR_POSTS'})
+            console.log('user: ',user);
+            
         } catch (err) {
             console.log('no user found', err)
         }
+        console.log('login');
+        return true
     }
 }
 
@@ -27,6 +34,35 @@ export function signup(credentials) {
         } catch (err) {
             console.log('Cannot signup')
         }
+    }
+}
+
+export function getUser(username) {
+    return async (dispatch) => {
+        try {
+            const userProfileShow = await userService.getUser(username)
+            dispatch({ type: 'GET_USER', userProfileShow })
+            
+        } catch (err) {
+            console.log('Cannot logout');
+        }
+    }
+}
+
+
+export function toggleUserMenu(showUserMenu) {
+    return (dispatch) => {
+        if (showUserMenu) dispatch({ type: 'SHOW_USER_MENU', showUserMenu: false })
+        else dispatch({ type: 'SHOW_USER_MENU', showUserMenu: true })
+    }
+}
+
+export function toggleProfileOptions(showProfileOptions) {
+    console.log('showProfileOptions: ',showProfileOptions);
+    
+    return (dispatch) => {
+        if (showProfileOptions) dispatch({ type: 'SHOW_PROFILE_OPTIONS', showProfileOptions: false })
+        else dispatch({ type: 'SHOW_PROFILE_OPTIONS', showProfileOptions: true })
     }
 }
 
@@ -53,28 +89,3 @@ export function signup(credentials) {
 //         }
 //     }
 // }
-export function getUser(username) {
-    return async (dispatch) => {
-        try {
-            const userProfileShow = await userService.getUser(username)
-            dispatch({ type: 'GET_USER', userProfileShow })
-
-        } catch (err) {
-            console.log('Cannot logout');
-        }
-    }
-}
-
-export function toggleProfileOption(showProfileOption) {
-    return (dispatch) => {
-        if (showProfileOption) dispatch({ type: 'SHOW_PROFILE_OPTION', showProfileOption: false })
-        else dispatch({ type: 'SHOW_PROFILE_OPTION', showProfileOption: true })
-    }
-}
-
-export function toggleUserMenu(showUserMenu) {
-    return (dispatch) => {
-        if (showUserMenu) dispatch({ type: 'SHOW_USER_MENU', showUserMenu: false })
-        else dispatch({ type: 'SHOW_USER_MENU', showUserMenu: true })
-    }
-}

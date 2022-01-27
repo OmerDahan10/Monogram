@@ -57,10 +57,15 @@ export function addPost(post){
 }
 
 export function getPostByUserId(userId){
+    console.log('userId: ',userId);
+    
     return async (dispatch) =>{
         try{
             const userPosts = await postService.getPostByUserId(userId);
+            console.log(userPosts);
             dispatch({type:'SET_USER_POSTS',userPosts});
+            console.log('userPosts: ',userPosts);
+            
         }catch(err){
             console.log('cannot get users posts',err);
         }

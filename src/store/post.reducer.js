@@ -30,6 +30,9 @@ export function postReducer(state = initialState, action) {
         case 'SET_USER_POSTS':
             newState = { ...state, connectedUserPosts: action.userPosts }
             break;
+        case 'CLEAR_POSTS':
+            newState= {...state, posts: []}
+            break;
         default:
             return state
     }

@@ -1,40 +1,44 @@
 import React from "react";
 import { connect } from "react-redux";
-import { loadPosts, updatePost, deletePost } from "../store/post.action.js";
-import { getUser, toggleProfileOption } from "../store/user.action.js"
+import { loadPosts, updatePost, deletePost, getPostByUserId } from "../store/post.action.js";
+import { getUser, toggleProfileOptions } from "../store/user.action.js"
 import { ProfileOptions } from "../cmps/ProfileOptions.jsx";
-// import {ReactComponent as OptionIcon} from '../img/svg/'
-// import { ReactComponent as OptionIcon} from '../img/svg/'
 import { ReactComponent as OptionIcon } from '../img/svg/option.svg';
+// import { ProfileHeaderChange } from "../cmps/ProfileHeaderChange.jsx";
 
 
 class _ProfilePage extends React.Component {
 
     componentDidMount() {
-        this.props.getUser(this.props.match.params.username)
-        this.props.loadPosts()
+        this.props.getUser(this.props.match.params.username);
+        this.props.getPostByUserId(this.props.connectedUser._id);
+        // this.props.loadPosts()
         // this.props.loadPosts(this.props.userProfileShow);
     }
-
+    
     onProfileOptions = () => {
-        console.log('this.props: ', this.props);
-        this.props.toggleProfileOption(this.props.showProfileOption)
+        console.log('this.props: ', this.props.showProfileOptions);
+        this.props.toggleProfileOptions(this.props.showProfileOptions);
     }
-
+    
     render() {
-        const { connectedUser } = this.props
-        const { userProfileShow } = this.props
+        const { connectedUser, userProfileShow, connectedUserPosts } = this.props
+        // const { userProfileShow } = this.props
+        // const {connectedUserPosts} = this.props
         const posts = this.props.posts.filter((post) => userProfileShow._id === post.by._id)
+        console.log('this.props: ',this.props);
+        
 
         return (
             <div className="profile">
                 <section className="profile-header">
                     <div className="photo-container">
-                        <img src={userProfileShow.imgUrl} />
+                        <img src={userProfileShow.imgUrl} alt=""/>
                     </div>
                     <div className="profile-user-info">
                         <section className="un-ed-o">
                             <h2>{userProfileShow.username}</h2>
+                            {/* <ProfileHeaderChange userProfileShow={userProfileShow} connectedUser={connectedUser} onProfileOptions={this.onProfileOptions} /> */}
                             {userProfileShow._id === connectedUser._id && (
                                 <div className="profile-edit-options">
                                     <div className="profile-edit">
@@ -55,7 +59,6 @@ class _ProfilePage extends React.Component {
                                     </div>
                                 </div>
                             )}
-                            {/* <button >Options</button> */}
                         </section>
                         <ul>
                             <li className="clean-list u-p">
@@ -71,14 +74,27 @@ class _ProfilePage extends React.Component {
                         <h4>{userProfileShow.fullname}</h4>
                     </div>
                 </section>
-                <article className="profile-post-list">
+                <section className="profile-post-list">
                     {/* <PostList posts={posts} user={user} onToggleLike={this.onToggleLike} onAddComment={this.onAddComment} /> */}
-                    {posts.map((post) => (
-                        <img src={post.imgUrl} />
+                    {userProfileShow._id === connectedUser._id && (
+                        <>
+                        {connectedUserPosts.map((post) => (
+                        <img src={post.imgUrl} alt=""/>
                         // <post.imgUrl
                         // <ProfilePostList userProfileShow={userProfileShow}/>
                     ))}
-                </article>
+                        </>
+                    )}
+                    {userProfileShow._id !== connectedUser._id && (
+                        <>
+                        {posts.map((post) => (
+                        <img src={post.imgUrl} alt=""/>
+                        // <post.imgUrl
+                        // <ProfilePostList userProfileShow={userProfileShow}/>
+                    ))}
+                    </>
+                    )}
+                </section>
                 <ProfileOptions />
             </div>
         )
@@ -89,9 +105,10 @@ class _ProfilePage extends React.Component {
 function mapStateToProps(state) {
     return {
         posts: state.postModule.posts,
-        userProfileShow: state.userModule.userProfileShow,
+        connectedUserPosts: state.postModule.connectedUserPosts,
         connectedUser: state.userModule.connectedUser,
-        showProfileOption: state.userModule.showProfileOption
+        userProfileShow: state.userModule.userProfileShow,
+        showProfileOptions: state.userModule.showProfileOptions
     }
 }
 
@@ -99,8 +116,9 @@ const mapDispatchToProps = {
     loadPosts,
     updatePost,
     deletePost,
+    getPostByUserId,
     getUser,
-    toggleProfileOption,
+    toggleProfileOptions,
 };
 
 // export const ProfilePage = connect(null, mapDispatchToProps)(_ProfilePage);
