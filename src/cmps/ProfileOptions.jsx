@@ -20,8 +20,8 @@ function _ProfileOptions({ showProfileOption, toggleProfileOption }) {
         <div className="profile-option-container" onClick={toggleProfileOption}>
           <div onClick={(ev) => ev.stopPropagation()} className="profile-option-list">
             <ul>
-              <li><Link className="clean-link change-password" to={`/acconts/password/change`}>Change Password</Link></li>
-              <li><Link className="clean-link change-password" to={`/acconts/password/change`}>Log Out</Link></li>
+              <button><Link className="clean-link change-password" to={`/acconts/password/change`}>Change Password</Link></button>
+              <button><Link className='clean-link logout' to={'/login'}>Logout</Link></button>
               {/* <li><button onClick={this.Cancel}>Cancel</button></li> */}
             </ul>
           </div>

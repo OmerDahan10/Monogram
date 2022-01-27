@@ -22,11 +22,9 @@ class _ProfilePage extends React.Component {
     }
 
     render() {
-        console.log('this.props: ', this.props);
         const { connectedUser } = this.props
         const { userProfileShow } = this.props
         const posts = this.props.posts.filter((post) => userProfileShow._id === post.by._id)
-        console.log(userProfileShow);
 
         return (
             <div className="profile">
@@ -34,28 +32,42 @@ class _ProfilePage extends React.Component {
                     <div className="photo-container">
                         <img src={userProfileShow.imgUrl} />
                     </div>
-                    <div className="profil-user-info">
+                    <div className="profile-user-info">
                         <section className="un-ed-o">
                             <h2>{userProfileShow.username}</h2>
                             {userProfileShow._id === connectedUser._id && (
-                                <>
-                                    <button>Edit Profile</button>
-                                    <button onClick={this.onProfileOptions}><OptionIcon /></button>
-                                </>
+                                <div className="profile-edit-options">
+                                    <div className="profile-edit">
+                                        <button>Edit Profile</button>
+                                    </div>
+                                    <div className="profile-option">
+                                        <button onClick={this.onProfileOptions}><OptionIcon /></button>
+                                    </div>
+                                </div>
                             )}
                             {userProfileShow._id !== connectedUser._id && (
-                                <>
-                                    <button>Messge</button>
-                                    <button>Unfollow</button>
-                                </>
+                                <div className="profile-msg-unfo">
+                                    <div className="profile-msg">
+                                        <button>Messge</button>
+                                    </div>
+                                    <div className="profile-unfollow">
+                                        <button>Unfollow</button>
+                                    </div>
+                                </div>
                             )}
                             {/* <button >Options</button> */}
                         </section>
-                        <>
-                            {userProfileShow.userPostsIds.length} posts
-                            <button>{userProfileShow.followers.length} followers</button>
-                            <button>{userProfileShow.followings.length} following</button>
-                        </>
+                        <ul>
+                            <li className="clean-list u-p">
+                                <span className="num">{userProfileShow.userPostsIds.length}</span> posts
+                            </li>
+                            <li className="clean-list u-fr">
+                                <button><span className="num">{userProfileShow.followers.length}</span> followers</button>
+                            </li>
+                            <li className="clean-list u-fn">
+                                <button><span className="num">{userProfileShow.followings.length}</span> following</button>
+                            </li>
+                        </ul>
                         <h4>{userProfileShow.fullname}</h4>
                     </div>
                 </section>

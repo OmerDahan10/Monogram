@@ -16,8 +16,8 @@
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
     background-color: rgb(253, 253, 253);
-    // max-width:975px;
-    max-width:967px;
+    max-width:975px;
+    // max-width:967px;
     margin: 0 auto;
     
     .main-nav{
@@ -35,6 +35,7 @@
         border-radius: 50%;
         width: 35px;
         height: 35px;
+        object-fit: cover;
     }
     .main-nav{
         display: flex;

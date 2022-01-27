@@ -70,5 +70,11 @@ export function toggleProfileOption(showProfileOption) {
         if (showProfileOption) dispatch({ type: 'SHOW_PROFILE_OPTION', showProfileOption: false })
         else dispatch({ type: 'SHOW_PROFILE_OPTION', showProfileOption: true })
     }
+}
 
+export function toggleUserMenu(showUserMenu) {
+    return (dispatch) => {
+        if (showUserMenu) dispatch({ type: 'SHOW_USER_MENU', showUserMenu: false })
+        else dispatch({ type: 'SHOW_USER_MENU', showUserMenu: true })
+    }
 }
