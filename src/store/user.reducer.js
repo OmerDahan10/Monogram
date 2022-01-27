@@ -10,7 +10,8 @@ const initialState = {
     // connectedUser: userService.getLoggedinUser() || null
     // connectedUser: userService.getLoggedinUser() || storageService.loadFromStorage('users')[0],
     connectedUser: userService.getLoggedinUser(),
-    userProfileShow: userService.getUser('Muki') || null,
+    // userProfileShow: userService.getUser('Muki') || null,
+    userProfileShow: null,
     showProfileOptions: false,
     showUserMenu: false,
 }

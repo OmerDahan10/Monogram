@@ -10,6 +10,7 @@ import { ReactComponent as OptionIcon } from '../img/svg/option.svg';
 class _ProfilePage extends React.Component {
 
     componentDidMount() {
+        console.log(this.props.match.params.username);
         this.props.getUser(this.props.match.params.username);
         this.props.getPostByUserId(this.props.connectedUser._id);
         // this.props.loadPosts()
@@ -22,8 +23,12 @@ class _ProfilePage extends React.Component {
     }
     
     render() {
+        
         const { connectedUser, userProfileShow, connectedUserPosts } = this.props
         // const { userProfileShow } = this.props
+        if(!userProfileShow) {
+            return <></>
+        }
         // const {connectedUserPosts} = this.props
         const posts = this.props.posts.filter((post) => userProfileShow._id === post.by._id)
         console.log('this.props: ',this.props);

@@ -50,7 +50,8 @@ async function getUser(username) {
     // const users = storageService.loadFromStorage(STORAGE_KEY);
     // const user = users.filter((user) => user.username === username );
     // return user[0];
-    const user = await httpService.get(`/user/${username}`);
+    console.log(username);
+    const user = await httpService.get(`user/${username}`);
     return user;
 }
 
