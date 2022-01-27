@@ -13,7 +13,8 @@ import { AddPost } from '../cmps/AddPost.jsx';
 
 
 function _Header({ showAdd, toggleShowAdd, user }) {
-
+ 
+    console.log(user);
   const onAddPost = () => {
     toggleShowAdd(showAdd);
   }

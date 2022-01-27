@@ -37,24 +37,24 @@ class _LoginSignup extends React.Component {
         ev.preventDefault();
         const { credentials } = this.state
         console.log('the crd in serv', credentials);
-        if (!credentials.username || !credentials.password) return;
-        const user = this._checkForExistsUser(credentials.username);
-        if (!user || credentials.password !== user.password) {
-            this.clearState();
-            return;
-        }
-        this.props.login(user);
-        this.setState({ user: user });
-        console.log('user: ', user);
+        // if (!credentials.username || !credentials.password) return;
+        // const user = this._checkForExistsUser(credentials.username);
+        // if (!user || credentials.password !== user.password) {
+        //     this.clearState();
+        //     return;
+        // }
+        const user = this.props.login(credentials);
+        // this.setState({ user: user });
+        // console.log('user: ', user);
         this.clearState();
         window.location = '/';
     }
 
-    _checkForExistsUser = (username) => {
-        const users = storageService.loadFromStorage('users');
-        const user = users.filter(user => username === user.username);
-        return user[0];
-    }
+    // _checkForExistsUser = (username) => {
+    //     const users = storageService.loadFromStorage('users');
+    //     const user = users.filter(user => username === user.username);
+    //     return user[0];
+    // }
 
     onSignup = (ev) => {
         ev.preventDefault();

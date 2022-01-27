@@ -24,7 +24,8 @@ export function _PostDetails({
 
   const onToggleLike = (postId, isLiked) => {
     console.log(isLiked);
-    const connectedUser = storageService.loadFromStorage("loggedinUser");
+    // const connectedUser = storageService.loadFromStorage("loggedinUser");
+    const connectedUser = user;
     const post = posts.find((post) => post._id === postId);
     if (isLiked) {
       post.likedBy = post.likedBy.filter(
