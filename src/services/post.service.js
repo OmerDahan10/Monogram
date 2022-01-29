@@ -30,7 +30,7 @@ export async function loadPosts(user) {
 
 export async function getPostByUserId(userId){
     // return storageService.getPostsById(userId);
-    const posts=await httpService.get(`post/${userId}`);
+    const posts = await httpService.get(`post/${userId}`);
     return posts;
 }
 

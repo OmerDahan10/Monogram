@@ -28,6 +28,7 @@ export function postReducer(state = initialState, action) {
             newState = { ...state, posts: [action.newPost, ...state.posts] }
             break;
         case 'SET_USER_POSTS':
+            console.log('action: ',action);
             newState = { ...state, connectedUserPosts: action.userPosts }
             break;
         case 'CLEAR_POSTS':

@@ -7,19 +7,25 @@ import { Link } from "react-router-dom";
 
 function _ProfileOptions({ showProfileOptions, toggleProfileOptions }) {
 
-  console.log('showProfileOptions: ',showProfileOptions);
-  
   return (
     <>
       {showProfileOptions && (
         <div className="profile-options-container" onClick={toggleProfileOptions}>
-          <div onClick={(ev) => ev.stopPropagation()} className="profile-options-list">
-            <ul>
-              <button><Link className="clean-link change-password" to={`/acconts/password/change`}>Change Password</Link></button>
-              <button><Link className='clean-link logout' to={'/login'}>Logout</Link></button>
-              <button className="exit-option" onClick={toggleProfileOptions}>Cancel</button>
+          <div onClick={toggleProfileOptions} className="profile-options-list">
+              {/* <button className="clean-btn profile-change-password"> */}
+                <Link className="clean-link profile-change-password" tabIndex={0} to={`/acconts/password/change`}>Change Password</Link>
+                {/* </button> */}
+              {/* <button className="clean-btn"> */}
+                <Link className="clean-link profile-settings" to={`/accounts/edit`}>Settings</Link>
+                {/* </button> */}
+              {/* <button className="clean-btn"> */}
+                <Link className="clean-link profile-to-homepage" to={`/`}>Home Page</Link>
+                {/* </button> */}
+              {/* <button className="clean-btn"> */}
+                <Link className='clean-link profile-logout' to={'/login'}>Log Out</Link>
+              {/* </button> */}
+              <button className="clean-btn profile-exit">Cancel</button>
               {/* <li><button onClick={this.Cancel}>Cancel</button></li> */}
-            </ul>
           </div>
         </div>
       )}

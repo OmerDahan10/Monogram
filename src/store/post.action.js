@@ -8,7 +8,7 @@ export function loadPosts() {
         try {
             const state = getState();
             const user = state.userModule.connectedUser
-            console.log(user);
+            // console.log(user);
             // const user = users[0];
             const posts = await postService.loadPosts(user);
             // console.log(posts)
@@ -57,15 +57,15 @@ export function addPost(post){
 }
 
 export function getPostByUserId(userId){
-    console.log('userId: ',userId);
+    // console.log('userId: ',userId);
     
     return async (dispatch) =>{
         try{
-            console.log(userId);
+            // console.log(userId);
             const userPosts = await postService.getPostByUserId(userId);
-            console.log(userPosts);
+            // console.log(userPosts);
             dispatch({type:'SET_USER_POSTS',userPosts});
-            console.log('userPosts: ',userPosts);
+            // console.log('userPosts: ',userPosts);
             
         }catch(err){
             console.log('cannot get users posts',err);

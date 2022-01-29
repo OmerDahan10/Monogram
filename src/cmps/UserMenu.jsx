@@ -2,30 +2,32 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import {toggleUserMenu} from '../store/user.action.js'
+import { ReactComponent as MiniProfileIcon } from '../img/svg/mini-profile-icon.svg';
+import { ReactComponent as MiniSavedIcon } from '../img/svg/mini-saved-icon.svg';
+import { ReactComponent as MiniOptionIcon } from '../img/svg/mini-option-icon.svg';
+import { ReactComponent as MiniCancelIcon } from '../img/svg/mini-X-icon.svg';
+// import { ReactComponent as MiniCancelIcon } from '../img/svg/X-icon.svg';
 
 
-function _UserMenu({ showUserMenu, toggleUserMenu, user }) {
-
+function _UserMenu({ showUserMenu, toggleUserMenu, user, }) {
 
   return (
     <>
       {showUserMenu && (
         // <div className="user-menu" onClick={toggleUserMenu}>
-          <div onClick={(ev) => ev.stopPropagation()} className="user-menu-container">
+          // <div onClick={(ev) => ev.stopPropagation()} className="user-menu-container">
+          <div className="user-menu-container">
             {/* <p>squre</p> */}
             <div  className="user-menu-options" onClick={toggleUserMenu}>
-              <Link className="clean-link" to={`/profile/${user.username}`}>profile</Link>
-              <Link className="clean-link change-password" to={`/acconts/password/change`}>Change Password</Link>
-              <Link className="clean-link logout" to={'/login'}>Logout</Link>
-              {/* <Link className="clean-link u-m-cancel" to={'/'}>Cancel</Link> */}
-              <button className="exit-user-menu clean-btn" >Cancel</button>
-              {/* <button><Link className="clean-link change-password" to={`/acconts/password/change`}>Change Password</Link></button>
-              <button><Link className='clean-link logout' to={'/login'}>Logout</Link></button> */}
-              {/* <li><button onClick={this.Cancel}>Cancel</button></li> */}
+              <Link className="clean-link menu-profile" tabIndex={0} to={`/profile/${user.username}`}><span><MiniProfileIcon/></span> Profile</Link>
+              <Link className="clean-link menu-change-password" to={`/profile/${user.username}/saved`}><span><MiniSavedIcon/></span> Saved</Link>
+              <Link className="clean-link menu-settings" to={`/accounts/edit`}><span><MiniOptionIcon/></span> Settings</Link>
+              <button className="clean-btn menu-cancel"><span><MiniCancelIcon/></span>Cancel</button>
+              <Link className="clean-link menu-logout" to={'/login'}>Log Out</Link>
             </div>
           </div>
         // </div>
-      )}
+        )}
     </>
   )
 

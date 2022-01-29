@@ -59,10 +59,27 @@ export function toggleUserMenu(showUserMenu) {
 
 export function toggleProfileOptions(showProfileOptions) {
     console.log('showProfileOptions: ',showProfileOptions);
-    
     return (dispatch) => {
         if (showProfileOptions) dispatch({ type: 'SHOW_PROFILE_OPTIONS', showProfileOptions: false })
         else dispatch({ type: 'SHOW_PROFILE_OPTIONS', showProfileOptions: true })
+    }
+}
+
+export function toggleProfileFollowers(showProfileFollowers) {
+    return (dispatch) => {
+        if (showProfileFollowers) dispatch({ type: 'SHOW_PROFILE_FOLLOWERS', showProfileFollowers: false })
+        else dispatch({ type: 'SHOW_PROFILE_FOLLOWERS', showProfileFollowers: true })
+        
+        console.log('showProfileFollowers: ',showProfileFollowers);
+    }
+}
+
+export function toggleProfileFollowing(showProfileFollowing) {
+    return (dispatch) => {
+        if (showProfileFollowing) dispatch({ type: 'SHOW_PROFILE_FOLLOWING', showProfileFollowing: false })
+        else dispatch({ type: 'SHOW_PROFILE_FOLLOWING', showProfileFollowing: true })
+
+        console.log('showProfileFollowing: ',showProfileFollowing);
     }
 }
 
