@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
 import { toggleShowAdd, addPost } from "../store/post.action.js";
 import TextareaAutosize from "react-textarea-autosize";
+import { uploadImg } from "../services/cloudinary-service.js";
 import { ReactComponent as EmojiIcon } from "../img/svg/emoji.svg";
 import Picker from "emoji-picker-react";
 
@@ -28,12 +29,14 @@ function _AddPost({ posts, showAdd, user, toggleShowAdd,addPost,history }) {
     setText((prevInput) => prevInput + emojiObj.emoji);
   };
 
-  const onAddPost = () => {
+    const onAddPost = async () => {
+    const url = await uploadImg(file)
     const newPost = {
       by: user,
       comments: [],
       createdAt: Date.now(),
-      imgUrl:file,
+      imgUrl:url,
+      likedBy:[],
       loc:{},
       txt:text,
     };

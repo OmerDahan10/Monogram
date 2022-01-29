@@ -83,6 +83,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        width: 100%;
 
         .post-actions{
            display: flex;
@@ -125,7 +126,8 @@
 
         .post-time{
             font-size: 10px;
-            color: grey;
+            color: rgba(128, 128, 128, 0.664);
+            font-weight: 600;
         }
 
         .liked{
@@ -138,7 +140,8 @@
     }
 
     .add-comment{
-        width: 600px;
+        // width: 600px;
+        width: 100%;
         display: flex;
         justify-content:flex-start;
         align-items: center;
@@ -209,6 +212,19 @@
             align-items: center;
             gap: 1rem;
             
+            // .comment-user-text{
+            //     display: flex;
+            //     // align-items: center;
+
+                .comment-user-likes{
+                    font-size: 12px;
+                    margin-top: 5px;
+                    color: rgba(128, 128, 128, 0.637);
+                    font-weight: 600;
+                    // position: absolute;
+                }
+            // }
+
             img{
                 height: 35px;
                 width: 35px;
