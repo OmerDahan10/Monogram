@@ -1,7 +1,12 @@
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .add-container{
     height: 100%;
     width: 100vw;
+    // width: 400px;
     background-color: rgba(0, 0, 0, 0.774);
     position: fixed;
     top: 0;
@@ -11,8 +16,11 @@
 }
 
 .add-post{
-    height: 600px;
-    width: 600px;
+    // height: 600px;
+    height: 50%;
+    // width: 600px;
+    // overflow: hidden;
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -90,5 +98,13 @@
         position: absolute;
         left: 1rem;
         bottom: 1rem;
+    }
+}
+
+
+@media(min-width:600px){
+    .add-post{
+        height: 600px;
+        width: 600px;
     }
 }

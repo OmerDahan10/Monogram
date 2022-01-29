@@ -1,5 +1,6 @@
 // import { storageService } from '../services/async-storage.service.js'
 import {httpService} from './http.service.js';
+// import { socketService, SOCKET_EVENT_USER_UPDATED, SOCKET_EMIT_LOGIN, SOCKET_EMIT_LOGOUT } from './socket.service'
 
 import Axios from 'axios'
 var axios = Axios.create({
@@ -24,6 +25,7 @@ export const userService = {
 async function login(user) {
     // storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, user);
      const loggedIn = await httpService.post('auth/login',user);
+    //  socketService.emit(SOCKET_EMIT_LOGIN,loggedIn._id);
     _setLoggedinUser(loggedIn);
     return loggedIn;
 }
@@ -32,6 +34,7 @@ async function signup(user) {
     // storageService.saveToStorage(STORAGE_KEY, user);
     // storageService.saveToStorage(STORAGE_KEY_LOGGEDIN, user);
     const signedUp = await httpService.post('auth/signup',user)
+    // socketService.emit(SOCKET_EMIT_LOGIN,signedUp._id);
     _setLoggedinUser(signedUp);
     return signedUp
 }
@@ -58,6 +61,7 @@ async function getUser(username) {
 async function logout() {
     // sessionStorage.setItem(STORAGE_KEY_LOGGEDIN, null)
     // return axios.post(`http://localhost:3000/api/logout`);
+    // socketService.emit(SOCKET_EMIT_LOGOUT);
     await httpService.post('/auth/logout');
 }
 

@@ -5,6 +5,9 @@ import { PostPreview } from "../cmps/PostPreview";
 import { loadPosts, updatePost, deletePost } from "../store/post.action.js";
 import { ReactComponent as CloseIcon } from "../img/svg/close.svg";
 import { storageService } from "../services/async-storage.service.js";
+import { ReactComponent as MiniLikeIcon } from "../img/svg/mini-like.svg";
+import { ReactComponent as MiniUnLikeIcon } from "../img/svg/mini-unlike.svg";
+
 
 export function _PostDetails({
   posts,
@@ -37,8 +40,40 @@ export function _PostDetails({
     updatePost(post);
   };
 
+  const onToggleCommentLike = (postId,commentIdx,isLiked) =>{
+    const connectedUser = user;
+    const post = posts.find((post) => post._id === postId);
+    if(isLiked && post.comments[commentIdx].likedBy){
+        post.comments[commentIdx].likedBy = post.comments[commentIdx].likedBy.filter(user => user._id !== connectedUser._id )
+        
+    }else if(post.comments[commentIdx].likedBy){
+        post.comments[commentIdx].likedBy.unshift(connectedUser);
+    }else{
+        post.comments[commentIdx].likedBy = [connectedUser];
+    }
+    updatePost(post);
+  }
+
+  const checkIfCommentLiked = (postId,commentIdx) =>{
+    console.log(postId,commentIdx);
+    const post = posts.find((post) => post._id === postId);
+    const connectedUser = user;
+    if(post.comments[commentIdx].likedBy){
+        const commentLikesIds = post.comments[commentIdx].likedBy.map(user => user._id);
+        if(commentLikesIds.includes(connectedUser._id)){
+            return <button className="clean-button unlike" onClick={()=>onToggleCommentLike(post._id,commentIdx,true)}><MiniUnLikeIcon/></button>
+        }else{
+            return <button className="clean-button like" onClick={()=>onToggleCommentLike(post._id,commentIdx,false)}><MiniLikeIcon/></button>
+        }
+    }else {
+        return <button className="clean-button like" onClick={()=>onToggleCommentLike(post._id,commentIdx,false)}><MiniLikeIcon/></button>
+    }
+  }
+
   const onAddComment = (postId, text) => {
-    const connectedUser = storageService.loadFromStorage("loggedinUser");
+      console.log(postId,text);
+    // const connectedUser = storageService.loadFromStorage("loggedinUser");
+    const connectedUser = user;
     const post = posts.find((post) => post._id === postId);
     const comment = {
       _id: storageService.makeId(),
@@ -66,6 +101,8 @@ export function _PostDetails({
           onToggleLike={onToggleLike}
           onAddComment={onAddComment}
           postDetails={true}
+          onToggleCommentLike={onToggleCommentLike}
+          checkIfCommentLiked={checkIfCommentLiked}
         />
       </div>
     );

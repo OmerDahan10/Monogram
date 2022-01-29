@@ -27,6 +27,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .home{
+            svg{
+                fill: white;
+                stroke: black;
+                stroke-width: 2px;
+                height: 23px;
+                width: 23px;
+            }
+
+            &.active{
+                svg{
+                    stroke: none;
+                    fill: black;
+                    height: 24px;
+                    width: 24px;
+                }
+
+            }
+        }
+
+        // .add{
+        //     svg{
+        //         fill: white;
+        //         stroke: black;
+        //         stroke-width: 2px;
+        //     }
+
+        //     &.active{
+        //         svg{
+
+        //             stroke: none;
+        //             fill: black;
+        //         }
+        //     }
+        // }
     }
     .logo{
         font-family: 'cookie';

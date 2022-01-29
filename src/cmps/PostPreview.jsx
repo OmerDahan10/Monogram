@@ -76,7 +76,9 @@ export function PostPreview({
   post,
   user,
   onToggleLike,
+  onToggleCommentLike,
   onAddComment,
+  checkIfCommentLiked,
   postDetails = false,
 }) {
   const [showPicker, setShowPicker] = useState(false);
@@ -193,7 +195,7 @@ export function PostPreview({
 
       {postDetails && (
         <div className="show-comments">
-          {post.comments.map((comment) => {
+          {post.comments.map((comment,idx) => {
             return <div className="comment">
               <div className="comment-details">
 
@@ -204,8 +206,12 @@ export function PostPreview({
                     {comment.by.username}
                   </span>
                   <span className="comment-text">{comment.txt}</span>  
+                  <div className="comment-user-likes">
+                  <span className="comment-likes">{comment.likedBy ? comment.likedBy.length : 0} Likes</span>
+                  </div>
                 </div>
-                <button className="clean-button"><MiniLikeIcon/></button>
+                {checkIfCommentLiked(post._id,idx)}
+                {/* <button className="clean-button" onClick={onToggleCommentLike}><MiniLikeIcon/></button> */}
               </section>
               </div>
             </div>;
