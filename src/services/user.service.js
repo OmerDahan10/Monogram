@@ -20,6 +20,7 @@ export const userService = {
     getLoggedinUser,
     getEmptyUser,
     getUser,
+    removeFollower,
 }
 
 async function login(user) {
@@ -28,6 +29,15 @@ async function login(user) {
     //  socketService.emit(SOCKET_EMIT_LOGIN,loggedIn._id);
     _setLoggedinUser(loggedIn);
     return loggedIn;
+}
+
+async function logout() {
+    // sessionStorage.setItem(STORAGE_KEY_LOGGEDIN, null)
+    // return axios.post(`http://localhost:3000/api/logout`);
+    // socketService.emit(SOCKET_EMIT_LOGOUT);
+    console.log('aaa: ',aaa);
+    const aaa = await httpService.post('/auth/logout', null);
+    
 }
 
 async function signup(user) {
@@ -58,11 +68,8 @@ async function getUser(username) {
     return user;
 }
 
-async function logout() {
-    // sessionStorage.setItem(STORAGE_KEY_LOGGEDIN, null)
-    // return axios.post(`http://localhost:3000/api/logout`);
-    // socketService.emit(SOCKET_EMIT_LOGOUT);
-    await httpService.post('/auth/logout');
+async function removeFollower(userId) {
+    await httpService.post('/auth/removeFollower', userId);
 }
 
 function getEmptyUser() {

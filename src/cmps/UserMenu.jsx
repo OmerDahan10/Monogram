@@ -9,7 +9,7 @@ import { ReactComponent as MiniCancelIcon } from '../img/svg/mini-X-icon.svg';
 // import { ReactComponent as MiniCancelIcon } from '../img/svg/X-icon.svg';
 
 
-function _UserMenu({ showUserMenu, toggleUserMenu, user, }) {
+function _UserMenu({ showUserMenu, toggleUserMenu, user}) {
 
   return (
     <>
@@ -19,7 +19,7 @@ function _UserMenu({ showUserMenu, toggleUserMenu, user, }) {
           <div className="user-menu-container">
             {/* <p>squre</p> */}
             <div  className="user-menu-options" onClick={toggleUserMenu}>
-              <Link className="clean-link menu-profile" tabIndex={0} to={`/profile/${user.username}`}><span><MiniProfileIcon/></span> Profile</Link>
+              <Link className="clean-link menu-profile" to={`/profile/${user.username}`}><span><MiniProfileIcon/></span> Profile</Link>
               <Link className="clean-link menu-change-password" to={`/profile/${user.username}/saved`}><span><MiniSavedIcon/></span> Saved</Link>
               <Link className="clean-link menu-settings" to={`/accounts/edit`}><span><MiniOptionIcon/></span> Settings</Link>
               <button className="clean-btn menu-cancel"><span><MiniCancelIcon/></span>Cancel</button>

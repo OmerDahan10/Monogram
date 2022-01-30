@@ -21,10 +21,21 @@ export function login(credentials) {
     }
 }
 
+export function logout() {
+    return async (dispatch) => {
+        try {
+            await userService.logout()
+            dispatch({ type: 'SET_USER', user: null })
+            dispatch({type: 'CLEAR_POSTS'})
+        } catch (err) {
+            console.log('Cannot logout');
+        }
+    }
+}
+
 export function signup(credentials) {
-    const id = storageService.makeId()
     const create = new Date();
-    credentials = { ...credentials, _id: id, createdAt: create.getTime(), followings: [], followers: [], userPostsIds: [] }
+    credentials = { ...credentials, createdAt: create.getTime(), followings: [], followers: [], userPostsIds: [] }
     console.log('credentials: ', credentials);
 
     return async (dispatch) => {
@@ -44,11 +55,34 @@ export function getUser(username) {
             dispatch({ type: 'GET_USER', userProfileShow })
             
         } catch (err) {
-            console.log('Cannot logout');
+            console.log('Cannot logout', err);
         }
     }
 }
 
+export function removeFollower(userId){
+    return (dispatch) => {
+        try{
+            const user = userService.removeFollower(userId)
+            dispatch({type: 'SET_USER', user})
+        }
+        catch (err) {
+            console.log('Cannot remove', err);
+        }
+    }
+}
+
+export function removeFollowing(userId){
+    return (dispatch) => {
+        try{
+            const user = userService.removeFollowing(userId)
+            dispatch({type: 'SET_USER', user})
+        }
+        catch (err) {
+            console.log('Cannot remove', err);
+        }
+    }
+}
 
 export function toggleUserMenu(showUserMenu) {
     return (dispatch) => {
@@ -69,31 +103,15 @@ export function toggleProfileFollowers(showProfileFollowers) {
     return (dispatch) => {
         if (showProfileFollowers) dispatch({ type: 'SHOW_PROFILE_FOLLOWERS', showProfileFollowers: false })
         else dispatch({ type: 'SHOW_PROFILE_FOLLOWERS', showProfileFollowers: true })
-        
-        console.log('showProfileFollowers: ',showProfileFollowers);
     }
 }
 
-export function toggleProfileFollowing(showProfileFollowing) {
+export function toggleProfileFollowings(showProfileFollowings) {
     return (dispatch) => {
-        if (showProfileFollowing) dispatch({ type: 'SHOW_PROFILE_FOLLOWING', showProfileFollowing: false })
-        else dispatch({ type: 'SHOW_PROFILE_FOLLOWING', showProfileFollowing: true })
-
-        console.log('showProfileFollowing: ',showProfileFollowing);
+        if (showProfileFollowings) dispatch({ type: 'SHOW_PROFILE_FOLLOWINGS', showProfileFollowings: false })
+        else dispatch({ type: 'SHOW_PROFILE_FOLLOWINGS', showProfileFollowings: true })
     }
 }
-
-// export function logout() {
-//     return async (dispatch) => {
-//         try {
-//             await userService.logout()
-//             dispatch({ type: 'SET_USER', user: null })
-
-//         } catch (err) {
-//             console.log('Cannot logout');
-//         }
-//     }
-// }
 
 // export function loadUser() {
 //     return async (dispatch) => {

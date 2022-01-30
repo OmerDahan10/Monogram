@@ -15,7 +15,7 @@ const initialState = {
     showProfileOptions: false,
     showUserMenu: false,
     showProfileFollowers: false,
-    showProfileFollowing: false,
+    showProfileFollowings: false,
 }
 
 
@@ -39,8 +39,8 @@ export function userReducer(state = initialState, action) {
         case 'SHOW_PROFILE_FOLLOWERS':
             newState = { ...state, showProfileFollowers: action.showProfileFollowers };
             break;
-        case 'SHOW_PROFILE_FOLLOWING':
-            newState = { ...state, showProfileFollowing: action.showProfileFollowing };
+        case 'SHOW_PROFILE_FOLLOWINGS':
+            newState = { ...state, showProfileFollowings: action.showProfileFollowings };
             break;
         // case 'LOAD_USER':
         //     newState = { ...state, user: action.user }

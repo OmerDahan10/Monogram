@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { toggleProfileFollowers } from "../store/user.action.js";
-import { Link } from "react-router-dom";
+import { toggleProfileFollowers, removeFollower } from "../store/user.action.js";
 import { ReactComponent as XIcon } from '../img/svg/X-icon.svg';
 
 
@@ -10,7 +9,6 @@ function _ProfileFollowers({ showProfileFollowers, toggleProfileFollowers, follo
 
   // const {followers} = this.followers
   console.log('followers: ', followers);
-
 
   return (
     <>
@@ -21,11 +19,12 @@ function _ProfileFollowers({ showProfileFollowers, toggleProfileFollowers, follo
             <section className="followers-header">
               <div className="spacer"></div>
               <div className="followers-headline">Followers</div>
-              <div className="spacer"><button className="clean-btn exit-followers"><XIcon /></button></div>
+              <div className="spacer"><button className="clean-btn exit-followers" onClick={toggleProfileFollowers}><XIcon /></button></div>
             </section>
             <section className="followers-container">
               <div className="followers-list">
-                {followers.map((follower) => {return(
+                {followers.map((follower) => {
+                  return (
                   <div className="each-follower">
                     <div className="center">
                     <img src={follower.imgUrl} alt="" />
@@ -35,7 +34,7 @@ function _ProfileFollowers({ showProfileFollowers, toggleProfileFollowers, follo
                       <div className="follower-username"><span>{follower.username}</span></div>
                       <div className="follower-fullname">{follower.fullname}</div>
                     </div>
-                    <button className="clean-btn follower-remove">Remove</button>
+                    <button className="clean-btn follower-remove" onClick={()=>{removeFollower(follower._id)}}>Remove</button>
                   </div>
                 )})}
               </div>
@@ -58,8 +57,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
+  removeFollower,
   toggleProfileFollowers,
-  // toggleProfileFollowing,
 };
 
 export const ProfileFollowers = connect(mapStateToProps, mapDispatchToProps)(_ProfileFollowers);

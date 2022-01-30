@@ -43,7 +43,7 @@ class _LoginSignup extends React.Component {
         //     this.clearState();
         //     return;
         // }
-        const user = this.props.login(credentials);
+        const user = await this.props.login(credentials);
         // this.setState({ user: user });
         // console.log('user: ', user);
         this.clearState();
