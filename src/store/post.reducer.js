@@ -15,7 +15,7 @@ export function postReducer(state = initialState, action) {
             break;
         case 'UPDATE_POST':
             newState = {
-                ...state, posts: state.posts.map(post => (post._id === action.post._Id) ? action.post : post)
+                ...state, posts: state.posts.map(post => (post._id === action.post._id) ? action.post : post)
             }
             break;
         case 'DELETE_POST':

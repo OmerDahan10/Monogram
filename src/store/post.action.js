@@ -1,4 +1,5 @@
 import { postService } from "../services/post.service.js";
+import { socketService } from "../services/socket.service.js";
 const users = require('../data/user.json')
 
 
@@ -6,13 +7,20 @@ export function loadPosts() {
 
     return async (dispatch, getState) => {
         try {
+
             const state = getState();
             const user = state.userModule.connectedUser
             // console.log(user);
             // const user = users[0];
             const posts = await postService.loadPosts(user);
-            // console.log(posts)
+            console.log(posts)
+            posts.sort((post1,post2)=>{
+                return post2.createdAt - post1.createdAt
+            });
+            console.log(posts)
             dispatch({ type: 'LOAD_POSTS', posts });
+            socketService.off('post-updated');
+            socketService.on('post-updated',(post)=>dispatch({type:'UPDATE_POST',post}))
         } catch (err) {
             console.log('error loading posts', err);
             throw err;
@@ -23,6 +31,7 @@ export function loadPosts() {
 export function updatePost(post) {
     return async (dispatch, getState) => {
         try {
+            console.log(post);
             const user = users[0];
             // const state = getState();
             // const post = state.postModule.posts.find(post => post._id === postId);
@@ -49,7 +58,7 @@ export function addPost(post){
     return async (dispatch) =>{
         try{
             const newPost = await postService.addPost(post);
-            dispatch({type:'ADD_POST',newPost});
+            // dispatch({type:'ADD_POST',newPost});
         }catch(err){
             console.log('Cannot create post',err);
         }

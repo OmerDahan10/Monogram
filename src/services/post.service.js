@@ -41,6 +41,7 @@ export function addPost(post){
 
 export async function updatePost(post,user) {
     // return storageService.put('posts',post,user);
+    
     return httpService.put(`post/${post._id}`,post);
 }
 
