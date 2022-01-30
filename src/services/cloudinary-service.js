@@ -13,9 +13,10 @@ export function uploadImg(file) {
     })
         .then(res => res.json())
         .then(res => {
-            const elImg = document.createElement('img');
-            elImg.src = res.url;
-            document.body.append(elImg);
+            // const elImg = document.createElement('img');
+            // elImg.src = res.url;
+            // document.body.append(elImg);
+            return res.url
         })
         .catch(err => console.error(err))
 }

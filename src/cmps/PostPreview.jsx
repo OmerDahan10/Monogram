@@ -202,9 +202,9 @@ export function PostPreview({
               <img src={comment.by.imgUrl} />
               <section className="comment-user">
                 <div className="comment-user-text">
-                  <span className="comment-username">
+                  <Link to={`/profile/${comment.by.username}`} className="comment-username clean-link">
                     {comment.by.username}
-                  </span>
+                  </Link>
                   <span className="comment-text">{comment.txt}</span>  
                   <div className="comment-user-likes">
                   <span className="comment-likes">{comment.likedBy ? comment.likedBy.length : 0} Likes</span>

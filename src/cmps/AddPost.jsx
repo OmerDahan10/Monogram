@@ -7,7 +7,8 @@ import { uploadImg } from "../services/cloudinary-service.js";
 import { ReactComponent as EmojiIcon } from "../img/svg/emoji.svg";
 import Picker from "emoji-picker-react";
 
-function _AddPost({ posts, showAdd, user, toggleShowAdd,addPost,history }) {
+function _AddPost({ posts, showAdd, user, toggleShowAdd,addPost,props }) {
+    console.log(props);
   const [file, setFile] = useState(null);
   const [text, setText] = useState("");
   const [showPicker, setShowPicker] = useState(false);
@@ -31,6 +32,7 @@ function _AddPost({ posts, showAdd, user, toggleShowAdd,addPost,history }) {
 
     const onAddPost = async () => {
     const url = await uploadImg(file)
+    console.log(url);
     const newPost = {
       by: user,
       comments: [],
@@ -41,9 +43,10 @@ function _AddPost({ posts, showAdd, user, toggleShowAdd,addPost,history }) {
       txt:text,
     };
     addPost(newPost);
-    history.push('/');
+    // history.push('/');
     setFile(null);
     setText('');
+    toggleShowAdd(showAdd)
 
   };
 
