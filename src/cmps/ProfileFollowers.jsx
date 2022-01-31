@@ -5,10 +5,13 @@ import { ReactComponent as XIcon } from '../img/svg/X-icon.svg';
 
 
 
-function _ProfileFollowers({ showProfileFollowers, toggleProfileFollowers, followers }) {
+function _ProfileFollowers({ showProfileFollowers, toggleProfileFollowers, followers, connectedUser, userProfileShow, isconnected }) {
 
   // const {followers} = this.followers
-  console.log('followers: ', followers);
+  // console.log('followers: ', followers);
+  // console.log('connectedUser: ',connectedUser);
+  // console.log('userProfileShow: ',userProfileShow);
+  
 
   return (
     <>
@@ -52,6 +55,8 @@ const mapStateToProps = (state) => {
   return {
     // user: state.userModule.connectedUser,
     showProfileFollowers: state.userModule.showProfileFollowers,
+    connectedUser: state.userModule.connectedUser,
+    userProfileShow: state.userModule.userProfileShow,
     // showProfileFollowing: state.userModule.showProfileFollowing,
   };
 };

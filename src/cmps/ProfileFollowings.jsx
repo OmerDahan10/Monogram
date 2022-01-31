@@ -25,7 +25,7 @@ function _ProfileFollowings({ showProfileFollowings, toggleProfileFollowings, fo
                 {followings.map((following) => {return(
                   <div className="each-following">
                     <div className="center">
-                    <img src={followings.imgUrl} alt="" />
+                    <img src={following.imgUrl} alt="" />
                     </div>
                     <div className="following-names">
                       <div className="following-username"><span>{following.username}</span></div>
@@ -46,8 +46,7 @@ function _ProfileFollowings({ showProfileFollowings, toggleProfileFollowings, fo
 
 const mapStateToProps = (state) => {
   return {
-    // user: state.userModule.connectedUser,
-    // showProfileFollowers: state.userModule.showProfileFollowers,
+    connectedUser: state.userModule.connectedUser,
     showProfileFollowings: state.userModule.showProfileFollowings,
   };
 };

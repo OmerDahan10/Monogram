@@ -9,8 +9,8 @@ import { userService } from '../services/user.service.js'
 const initialState = {
     // connectedUser: userService.getLoggedinUser() || null
     // connectedUser: userService.getLoggedinUser() || storageService.loadFromStorage('users')[0],
-    connectedUser: userService.getLoggedinUser(),
     // userProfileShow: userService.getUser('Muki') || null,
+    connectedUser: userService.getLoggedinUser(),
     userProfileShow: null,
     showProfileOptions: false,
     showUserMenu: false,
@@ -27,9 +27,12 @@ export function userReducer(state = initialState, action) {
         case 'SET_USER':
             newState = { ...state, connectedUser: action.user };
             break;
-        case 'GET_USER':
+        case 'GET_USER_TO_SHOW':
             newState = { ...state, userProfileShow: action.userProfileShow };
             break;
+        // case 'GET_USER':
+        //     newState = { ...state, userProfileShow: action.userProfileShow };
+        //     break;
         case 'SHOW_USER_MENU':
             newState = { ...state, showUserMenu: action.showUserMenu };
             break;

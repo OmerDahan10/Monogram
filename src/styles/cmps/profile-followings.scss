@@ -30,8 +30,9 @@
     align-items: stretch;
     z-index: 1;
     border-radius: 12px;
-    animation: IGCoreModalShow .1s ease-out;
-
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    
     .followings-header{
 
         font: inherit;

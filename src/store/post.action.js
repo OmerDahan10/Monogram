@@ -13,11 +13,11 @@ export function loadPosts() {
             // console.log(user);
             // const user = users[0];
             const posts = await postService.loadPosts(user);
-            console.log(posts)
+            // console.log(posts)
             posts.sort((post1,post2)=>{
                 return post2.createdAt - post1.createdAt
             });
-            console.log(posts)
+            // console.log(posts)
             dispatch({ type: 'LOAD_POSTS', posts });
             socketService.off('post-updated');
             socketService.on('post-updated',(post)=>dispatch({type:'UPDATE_POST',post}))

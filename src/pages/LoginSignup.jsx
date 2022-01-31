@@ -36,7 +36,6 @@ class _LoginSignup extends React.Component {
     onLogin = async (ev) => {
         ev.preventDefault();
         const { credentials } = this.state
-        console.log('the crd in serv', credentials);
         // if (!credentials.username || !credentials.password) return;
         // const user = this._checkForExistsUser(credentials.username);
         // if (!user || credentials.password !== user.password) {

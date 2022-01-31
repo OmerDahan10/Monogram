@@ -8,7 +8,7 @@ import { ReactComponent as EmojiIcon } from "../img/svg/emoji.svg";
 import Picker from "emoji-picker-react";
 
 function _AddPost({ posts, showAdd, user, toggleShowAdd,addPost,props }) {
-    console.log(props);
+    // console.log(props);
   const [file, setFile] = useState(null);
   const [text, setText] = useState("");
   const [showPicker, setShowPicker] = useState(false);

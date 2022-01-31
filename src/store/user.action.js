@@ -4,19 +4,15 @@ import { storageService } from '../services/async-storage.service.js'
 export function login(credentials) {
     // const user = storageService.loadFromStorage("users")
     // const credentials = user[0];
-    console.log('credentials: ',credentials);
     
     return async (dispatch) => {
         try {
             const user = await userService.login(credentials)
             dispatch({ type: 'SET_USER', user })
             dispatch({type: 'CLEAR_POSTS'})
-            console.log('user: ',user);
-            
         } catch (err) {
             console.log('no user found', err)
         }
-        console.log('login');
         return true
     }
 }
@@ -52,7 +48,7 @@ export function getUser(username) {
     return async (dispatch) => {
         try {
             const userProfileShow = await userService.getUser(username)
-            dispatch({ type: 'GET_USER', userProfileShow })
+            dispatch({ type: 'GET_USER_TO_SHOW', userProfileShow })
             
         } catch (err) {
             console.log('Cannot logout', err);

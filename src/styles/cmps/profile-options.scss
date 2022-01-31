@@ -31,8 +31,10 @@
         // text-align: center;
         z-index: 1;
         border-radius: 12px;
-        -webkit-animation: IGCoreModalShow .1s ease-out;
-        animation: IGCoreModalShow .1s ease-out;
+        animation-name: zoomIn;
+        animation-duration: .1s;
+        // -webkit-animation: IGCoreModalShow .1s ease-out;
+        // animation: IGCoreModalShow .1s ease-out;
 
         :nth-child(n){
             display: flex;
