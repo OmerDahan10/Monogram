@@ -1,5 +1,6 @@
 import { userService } from '../services/user.service.js';
-import { storageService } from '../services/async-storage.service.js'
+import { storageService } from '../services/async-storage.service.js';
+import { socketService } from '../services/socket.service.js';
 
 export function login(credentials) {
     // const user = storageService.loadFromStorage("users")
@@ -9,6 +10,7 @@ export function login(credentials) {
     return async (dispatch) => {
         try {
             const user = await userService.login(credentials)
+            if(user) socketService.emit('logged in',user._id);
             dispatch({ type: 'SET_USER', user })
             dispatch({type: 'CLEAR_POSTS'})
             console.log('user: ',user);

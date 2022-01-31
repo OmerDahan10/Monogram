@@ -1,7 +1,8 @@
 const initialState = {
     posts: [],
     showAdd: false,
-    connectedUserPosts: []
+    connectedUserPosts: [],
+    showNewPostBtn: false
 
 }
 
@@ -31,7 +32,11 @@ export function postReducer(state = initialState, action) {
             newState = { ...state, connectedUserPosts: action.userPosts }
             break;
         case 'CLEAR_POSTS':
-            newState= {...state, posts: []}
+            newState = { ...state, posts: [] }
+            break;
+        case 'FOLLOWING-ADDED-POST':
+            console.log(action);
+            newState = { ...state, showNewPostBtn: action.show }
             break;
         default:
             return state

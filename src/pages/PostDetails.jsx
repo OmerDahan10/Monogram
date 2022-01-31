@@ -15,13 +15,17 @@ export function _PostDetails({
   loadPosts,
   updatePost,
   deletePost,
+  userPosts
 }) {
   const params = useParams();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
     const postId = params.postId;
-    const post = posts.find((post) => post._id === postId);
+    let post = userPosts.find((post) => post._id === postId);
+    if(!post){
+       post = posts.find((post) => post._id === postId);
+    }
     setPost(post);
   });
 
@@ -42,7 +46,7 @@ export function _PostDetails({
 
   const onToggleCommentLike = (postId,commentIdx,isLiked) =>{
     const connectedUser = user;
-    const post = posts.find((post) => post._id === postId);
+    // const post = posts.find((post) => post._id === postId);
     if(isLiked && post.comments[commentIdx].likedBy){
         post.comments[commentIdx].likedBy = post.comments[commentIdx].likedBy.filter(user => user._id !== connectedUser._id )
         
@@ -56,7 +60,7 @@ export function _PostDetails({
 
   const checkIfCommentLiked = (postId,commentIdx) =>{
     console.log(postId,commentIdx);
-    const post = posts.find((post) => post._id === postId);
+    // const post = posts.find((post) => post._id === postId);
     const connectedUser = user;
     if(post.comments[commentIdx].likedBy){
         const commentLikesIds = post.comments[commentIdx].likedBy.map(user => user._id);
@@ -113,6 +117,7 @@ const mapStateToProps = (state) => {
   return {
     posts: state.postModule.posts,
     user: state.userModule.connectedUser,
+    userPosts: state.postModule.connectedUserPosts
   };
 };
 

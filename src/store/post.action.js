@@ -21,6 +21,13 @@ export function loadPosts() {
             dispatch({ type: 'LOAD_POSTS', posts });
             socketService.off('post-updated');
             socketService.on('post-updated',(post)=>dispatch({type:'UPDATE_POST',post}))
+            socketService.off('post-added');
+            socketService.on('post-added',()=>{
+                console.log('post-added');
+                // showNewPostBtn(true)
+                dispatch({type:'FOLLOWING-ADDED-POST',show:true})
+
+            })
         } catch (err) {
             console.log('error loading posts', err);
             throw err;
@@ -36,6 +43,7 @@ export function updatePost(post) {
             // const state = getState();
             // const post = state.postModule.posts.find(post => post._id === postId);
             dispatch({ type: 'UPDATE_POST', post })
+            // socketService.emit('test');
             await postService.updatePost(post, user);
         } catch (err) {
             console.log('cannot update post', err);
@@ -92,4 +100,11 @@ export function toggleShowAdd(showAdd) {
         else dispatch({ type: 'SHOW_ADD', show: true })
     }
 
+}
+
+export function showNewPostBtn(show){
+    console.log(show);
+    return(dispatch)=>{
+        dispatch({type:'FOLLOWING-ADDED-POST',show:show})
+    }
 }
