@@ -4,6 +4,8 @@ import { PostList } from "../cmps/PostList.jsx";
 import {loadPosts,updatePost,deletePost,showNewPostBtn} from "../store/post.action.js";
 import {login,logout} from "../store/user.action.js";
 import {storageService} from "../services/async-storage.service.js";
+import { Route } from "react-router-dom";
+import { LoginSignup } from "./LoginSignup.jsx";
 // import { NavLink } from "react-router-dom";
 
 
@@ -56,12 +58,8 @@ class _HomePage extends React.Component{
     }
     
     render(){
-        const {user} = this.props
-        // console.log('user: ',user);
-        const {posts} = this.props;
-        const {newPostBtn} = this.props;
-        console.log(newPostBtn);
-        // console.log(posts);
+        if (this.props.user === null) window.location.replace('/login');
+        const {user, posts, newPostBtn} = this.props
         return(
             <div>
                 {newPostBtn && <button className="new-post-button" onClick={this.onShowNewPosts}>New posts</button>}

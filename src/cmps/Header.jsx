@@ -22,7 +22,6 @@ function _Header({ showAdd, toggleShowAdd, user, showUserMenu, toggleUserMenu,sh
   return (
     <header className="header">
       <div className="header-container">
-
         <NavLink className='clean-link' to={'/'}><h1 className="logo">Monogram</h1></NavLink>
         <div className="main-nav">
           <NavLink exact className='home clean-link' activeClassName={showAdd ?'home clean-link' : 'home clean-link active' } to={'/'}><HomeIcon /></NavLink>

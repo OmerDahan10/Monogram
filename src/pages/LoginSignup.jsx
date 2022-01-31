@@ -68,10 +68,14 @@ class _LoginSignup extends React.Component {
         this.setState({ isSignup: !this.state.isSignup });
     }
 
+    onGuestMode = () => {
+        this.setState({credentials: {...this.state.credentials, username: 'shuli', password: 'shul1234'}})
+    }
+
     render() {
         const { username, password, fullname } = this.state.credentials;
-        const { isSignup } = this.state;
-        const { user } = this.state;
+        const { isSignup, user } = this.state;
+        // const { user } = this.state;
 
         return (
             <>
@@ -99,6 +103,7 @@ class _LoginSignup extends React.Component {
                                     required
                                 />
                             </div>
+                            <button onClick={this.onGuestMode}>Guest Mode</button>
                             <button onClick={this.onLogin}>Log In</button>
                         </form>}
 
