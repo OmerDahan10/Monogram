@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { PostList } from "../cmps/PostList.jsx";
-import {loadPosts,updatePost,deletePost} from "../store/post.action.js";
+import {loadPosts,updatePost,deletePost,showNewPostBtn} from "../store/post.action.js";
 import {login,logout} from "../store/user.action.js";
 import {storageService} from "../services/async-storage.service.js";
 // import { NavLink } from "react-router-dom";
@@ -48,15 +48,24 @@ class _HomePage extends React.Component{
         this.props.updatePost(post);
 
     }
+
+    onShowNewPosts = () =>{
+        this.props.showNewPostBtn(false);
+        this.props.loadPosts();
+        window.scrollTo(0,0);
+    }
     
     render(){
         const {user} = this.props
         // console.log('user: ',user);
         const {posts} = this.props;
+        const {newPostBtn} = this.props;
+        console.log(newPostBtn);
         // console.log(posts);
         return(
             <div>
-               <PostList posts = {posts} user = {user} onToggleLike={this.onToggleLike} onAddComment = {this.onAddComment} />
+                {newPostBtn && <button className="new-post-button" onClick={this.onShowNewPosts}>New posts</button>}
+               <PostList posts = {posts} user = {user} onToggleLike={this.onToggleLike} onAddComment = {this.onAddComment} className={newPostBtn ? 'post-container margin' : 'post-container'} />
             </div>
         )
     }
@@ -65,7 +74,8 @@ class _HomePage extends React.Component{
 function mapStateToProps(state){
     return{
         posts:state.postModule.posts,
-        user:state.userModule.connectedUser
+        user:state.userModule.connectedUser,
+        newPostBtn:state.postModule.showNewPostBtn
     }
 }
 
@@ -73,6 +83,7 @@ const mapDispatchToProps ={
     loadPosts,
     updatePost,
     deletePost,
+    showNewPostBtn
     // login,
     // logout,
 }

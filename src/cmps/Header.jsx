@@ -10,7 +10,7 @@ import { toggleUserMenu } from '../store/user.action.js'
 import { AddPost } from '../cmps/AddPost.jsx';
 
 
-function _Header({ showAdd, toggleShowAdd, user, showUserMenu, toggleUserMenu }) {
+function _Header({ showAdd, toggleShowAdd, user, showUserMenu, toggleUserMenu,showNewPostBtn }) {
 
   const onAddPost = () => {
     toggleShowAdd(showAdd);
@@ -45,7 +45,8 @@ const mapStateToProps = (state) => {
   return {
     showAdd: state.postModule.showAdd,
     showUserMenu: state.userModule.showUserMenu,
-    user: state.userModule.connectedUser
+    user: state.userModule.connectedUser,
+    showNewPostBtn:state.postModule.showNewPostBtn
   };
 };
 
