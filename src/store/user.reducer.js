@@ -16,6 +16,7 @@ const initialState = {
     showUserMenu: false,
     showProfileFollowers: false,
     showProfileFollowings: false,
+    searchUsers: null
 }
 
 
@@ -44,6 +45,9 @@ export function userReducer(state = initialState, action) {
             break;
         case 'SHOW_PROFILE_FOLLOWINGS':
             newState = { ...state, showProfileFollowings: action.showProfileFollowings };
+            break;
+        case 'SET_SEARCH_USERS':
+            newState = { ...state, searchUsers: action.users }
             break;
         // case 'LOAD_USER':
         //     newState = { ...state, user: action.user }

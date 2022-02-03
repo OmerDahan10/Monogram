@@ -21,6 +21,7 @@ export const userService = {
     getEmptyUser,
     getUser,
     removeFollower,
+    getUsers
 }
 
 async function login(user) {
@@ -68,8 +69,13 @@ async function getUser(username) {
     return user;
 }
 
+async function getUsers(search) {
+    const users = await httpService.get(`user/?search=${search}`)
+    return users;
+}
+
 async function removeFollower(userId) {
-    await httpService.post('/auth/removeFollower', userId);
+    await httpService.post('auth/removeFollower', userId);
 }
 
 function getEmptyUser() {

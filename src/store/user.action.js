@@ -111,6 +111,20 @@ export function toggleProfileFollowings(showProfileFollowings) {
     }
 }
 
+export function getUsers(search){
+    return async (dispatch) => {
+        try {
+            if(search){
+                const users = await userService.getUsers(search);
+                console.log(users);
+                dispatch({type:'SET_SEARCH_USERS',users})
+            }else dispatch({type:'SET_SEARCH_USERS',search})
+        }catch (err){
+            console.log('cant find users',err);
+        }
+    }
+}
+
 // export function loadUser() {
 //     return async (dispatch) => {
 //         try {

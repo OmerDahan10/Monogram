@@ -8,6 +8,7 @@ import { UserMenu } from "./UserMenu.jsx";
 import { toggleShowAdd } from '../store/post.action.js';
 import { toggleUserMenu } from '../store/user.action.js'
 import { AddPost } from '../cmps/AddPost.jsx';
+import {Search} from '../cmps/Search.jsx';
 
 
 function _Header({ showAdd, toggleShowAdd, user, showUserMenu, toggleUserMenu,showNewPostBtn }) {
@@ -23,6 +24,7 @@ function _Header({ showAdd, toggleShowAdd, user, showUserMenu, toggleUserMenu,sh
     <header className="header">
       <div className="header-container">
         <NavLink className='clean-link' to={'/'}><h1 className="logo">Monogram</h1></NavLink>
+        <Search/>
         <div className="main-nav">
           <NavLink exact className='home clean-link' activeClassName={showAdd ?'home clean-link' : 'home clean-link active' } to={'/'}><HomeIcon /></NavLink>
           {/* <NavLink className='clean-link' to={'/create'} onClick={onAddPost}><AddIcon/></NavLink> */}
