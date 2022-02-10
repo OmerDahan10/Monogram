@@ -74,8 +74,11 @@ async function getUsers(search) {
     return users;
 }
 
-async function removeFollower(userId) {
-    await httpService.post('auth/removeFollower', userId);
+async function removeFollower(user) {
+    const currUser = await httpService.post('', {user});
+    console.log('currUser: ',currUser);
+    
+    return currUser;
 }
 
 function getEmptyUser() {

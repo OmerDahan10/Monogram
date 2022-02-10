@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { toggleProfileFollowings, removeFollowing } from "../store/user.action.js";
 import { ReactComponent as XIcon } from '../img/svg/X-icon.svg';
-
+import { Link } from "react-router-dom";
 
 
 function _ProfileFollowings({ showProfileFollowings, toggleProfileFollowings, followings }) {
@@ -28,7 +28,7 @@ function _ProfileFollowings({ showProfileFollowings, toggleProfileFollowings, fo
                     <img src={following.imgUrl} alt="" />
                     </div>
                     <div className="following-names">
-                      <div className="following-username"><span>{following.username}</span></div>
+                      <div className="following-username"><Link className="clean-link" to={`/profile/${following.username}`}><span>{following.username}</span></Link></div>
                       <div className="following-fullname">{following.fullname}</div>
                     </div>
                     <button className="clean-btn following-remove" onClick={()=>{removeFollowing(following._id)}}>Following</button>

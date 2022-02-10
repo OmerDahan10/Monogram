@@ -51,17 +51,25 @@ export function getUser(username) {
         try {
             const userProfileShow = await userService.getUser(username)
             dispatch({ type: 'GET_USER_TO_SHOW', userProfileShow })
-            
+            return userProfileShow;
         } catch (err) {
             console.log('Cannot logout', err);
         }
     }
 }
 
-export function removeFollower(userId){
-    return (dispatch) => {
+export function removeFollower(followerUsername, userProfileShow){
+    return async (dispatch) => {
         try{
-            const user = userService.removeFollower(userId)
+            const theFollower = await userService.getUser(followerUsername);
+            userProfileShow.followers = userProfileShow.followers.filter((follower)=>follower._id!==theFollower._id);
+            theFollower.followings = theFollower.followings.filter((following)=>following._id!==userProfileShow._id);
+            console.log('userProfileShow: ',userProfileShow);
+            console.log('theFollower: ',theFollower);
+            
+            const user = await userService.removeFollower({...userProfileShow})
+            console.log('user: ',user);
+            userService.removeFollower(theFollower)
             dispatch({type: 'SET_USER', user})
         }
         catch (err) {

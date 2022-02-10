@@ -17,10 +17,15 @@
 }
 
 .profile-followers-modal{
+    ::-webkit-scrollbar{
+        display: block;
+    }
+    // overflow: visible;
+    // overflow-y: scroll;
     min-height: 200px;
     max-height: 400px;
     width: 400px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -39,9 +44,9 @@
         display: flex;
         border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
         align-items: stretch;
-        height: 43px;
-
+        
         .spacer{
+            height: 42px;
             display: flex;
             flex: 0 0 48px;
             align-items: center;
@@ -92,9 +97,7 @@
                 .center{
                     display: flex;
                     flex: 0 0 auto;
-                    // height: fit-content;
-                    // width: fit-content;
-                    margin-right: 12px;
+                    margin: 4px 13px 4px 4px;
                     justify-content: flex-start;
                     align-items: stretch;
                     align-content: stretch;
@@ -114,19 +117,37 @@
                     align-items: stretch;
                     align-content: stretch;
 
-                    .follower-username{
-                        color: rgba(var(--i1d,38,38,38),1);
-                        font-size: 14px;
-                        font-weight: 600;
-                        line-height: 18px;
+                    .follower-username-follow{
                         margin: -3px 0 -4px;
                         align-items: stretch;
+                        :link{
+                            color: rgba(var(--i1d,38,38,38),1);
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 18px;
+                        }
+                        button{
+                            color: rgba(var(--d69,0,149,246),1);
+                            padding: 0;
+                            margin-left: 11px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            text-align: center;
+                            line-height: 18px;
+                            span{
+                                font-weight: 600;
+                                font-size: 11px;
+                                line-height: 16px;
+
+                            }
+                        }
                     }
                     .follower-fullname{
                         height: 18px;
                         margin-top: 2px;
                         flex: 0 0 auto;
                         justify-content: flex-start;
+                        font-size: 14px;
                         font-weight: 400;
                         color: rgba(var(--f52,142,142,142),1);
                     }
@@ -140,6 +161,37 @@
                     border: 1px solid rgba(var(--ca6,219,219,219),1);
                     border-radius: 4px;
                     color: rgba(var(--f75,38,38,38),1);
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 5px 9px;
+                    text-align: center;
+                    line-height: 18px;  
+                }
+                .follower-following{
+                    font: inherit;
+                    display: flex;
+                    flex: 0 0 auto;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(var(--ca6,219,219,219),1);
+                    border-radius: 4px;
+                    color: rgba(var(--f75,38,38,38),1);
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 5px 9px;
+                    text-align: center;
+                    line-height: 18px;  
+                }
+                .follower-follow{
+                    font: inherit;
+                    display: flex;
+                    flex: 0 0 auto;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    background-color: rgba(var(--d69,0,149,246),1);
+                    color: #fff;
                     font-size: 14px;
                     font-weight: 600;
                     padding: 5px 9px;
