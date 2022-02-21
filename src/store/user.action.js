@@ -67,10 +67,10 @@ export function removeFollower(followerUsername, userProfileShow){
             console.log('userProfileShow: ',userProfileShow);
             console.log('theFollower: ',theFollower);
             
-            const user = await userService.removeFollower({...userProfileShow})
+            const user = await userService.removeFollower(userProfileShow)
             console.log('user: ',user);
             userService.removeFollower(theFollower)
-            dispatch({type: 'SET_USER', user})
+            dispatch({type: 'SET_USER', userProfileShow})
         }
         catch (err) {
             console.log('Cannot remove', err);

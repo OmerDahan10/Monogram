@@ -36,15 +36,7 @@ class _LoginSignup extends React.Component {
     onLogin = async (ev) => {
         ev.preventDefault();
         const { credentials } = this.state
-        // if (!credentials.username || !credentials.password) return;
-        // const user = this._checkForExistsUser(credentials.username);
-        // if (!user || credentials.password !== user.password) {
-        //     this.clearState();
-        //     return;
-        // }
         const user = await this.props.login(credentials);
-        // this.setState({ user: user });
-        // console.log('user: ', user);
         this.clearState();
         this.props.history.push('/');
     }
@@ -69,13 +61,12 @@ class _LoginSignup extends React.Component {
     }
 
     onGuestMode = () => {
-        this.setState({credentials: {...this.state.credentials, username: 'shuli', password: 'shul1234'}})
+        this.setState({credentials: {...this.state.credentials, username: 'Shuki', password: 'shukshuk'}})
     }
 
     render() {
         const { username, password, fullname } = this.state.credentials;
         const { isSignup, user } = this.state;
-        // const { user } = this.state;
 
         return (
             <>
