@@ -8,7 +8,7 @@ export function loadPosts() {
     return async (dispatch, getState) => {
         try {
 
-            const state = getState();
+            const state = getState(); 
             const user = state.userModule.connectedUser
             // console.log(user);
             // const user = users[0];
