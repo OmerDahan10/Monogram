@@ -27,7 +27,7 @@ export function _PostDetails({
        post = posts.find((post) => post._id === postId);
     }
     setPost(post);
-  });
+  },[]);
 
   const onToggleLike = (postId, isLiked) => {
     console.log(isLiked);
@@ -59,8 +59,6 @@ export function _PostDetails({
   }
 
   const checkIfCommentLiked = (postId,commentIdx) =>{
-    console.log(postId,commentIdx);
-    // const post = posts.find((post) => post._id === postId);
     const connectedUser = user;
     if(post.comments[commentIdx].likedBy){
         const commentLikesIds = post.comments[commentIdx].likedBy.map(user => user._id);
