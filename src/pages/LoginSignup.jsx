@@ -73,10 +73,11 @@ class _LoginSignup extends React.Component {
                 {user && <Route component={HomePage} path='/' />}
                 <div className='login-signup-page'>
                     <div className="login-signup-container">
-                        <h1 className="logo">Photogram</h1>
+                        <h1 className="logo">Monogram</h1>
                         {!isSignup && <form className="login-form" onSubmit={this.onLogin}>
                             <div className='user-input'>
                                 <input
+                                    className='user-input'
                                     type="text"
                                     name="username"
                                     value={username}
@@ -86,6 +87,7 @@ class _LoginSignup extends React.Component {
                                     autoFocus
                                 />
                                 <input
+                                    className='user-input'
                                     type="password"
                                     name="password"
                                     value={password}
@@ -94,8 +96,10 @@ class _LoginSignup extends React.Component {
                                     required
                                 />
                             </div>
-                            <button onClick={this.onGuestMode}>Guest Mode</button>
+                            <div className='button-container'>
                             <button onClick={this.onLogin}>Log In</button>
+                            <button onClick={this.onGuestMode}>Guest Mode</button>
+                            </div>
                         </form>}
 
                         {isSignup && <form className="signup-form" onSubmit={this.onSignup}>

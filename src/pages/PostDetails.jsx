@@ -30,8 +30,6 @@ export function _PostDetails({
   },[]);
 
   const onToggleLike = (postId, isLiked) => {
-    console.log(isLiked);
-    // const connectedUser = storageService.loadFromStorage("loggedinUser");
     const connectedUser = user;
     const post = posts.find((post) => post._id === postId);
     if (isLiked) {
@@ -73,7 +71,6 @@ export function _PostDetails({
   }
 
   const onAddComment = (postId, text) => {
-      console.log(postId,text);
     // const connectedUser = storageService.loadFromStorage("loggedinUser");
     const connectedUser = user;
     const post = posts.find((post) => post._id === postId);

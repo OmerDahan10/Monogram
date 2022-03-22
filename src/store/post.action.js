@@ -10,21 +10,16 @@ export function loadPosts() {
 
             const state = getState(); 
             const user = state.userModule.connectedUser
-            // console.log(user);
-            // const user = users[0];
             const posts = await postService.loadPosts(user);
-            // console.log(posts)
             posts.sort((post1,post2)=>{
                 return post2.createdAt - post1.createdAt
             });
-            // console.log(posts)
             dispatch({ type: 'LOAD_POSTS', posts });
             socketService.off('post-updated');
             socketService.on('post-updated',(post)=>dispatch({type:'UPDATE_POST',post}))
             socketService.off('post-added');
             socketService.on('post-added',()=>{
                 console.log('post-added');
-                // showNewPostBtn(true)
                 dispatch({type:'FOLLOWING-ADDED-POST',show:true})
 
             })
@@ -38,12 +33,8 @@ export function loadPosts() {
 export function updatePost(post) {
     return async (dispatch, getState) => {
         try {
-            console.log(post);
             const user = users[0];
-            // const state = getState();
-            // const post = state.postModule.posts.find(post => post._id === postId);
             dispatch({ type: 'UPDATE_POST', post })
-            // socketService.emit('test');
             await postService.updatePost(post, user);
         } catch (err) {
             console.log('cannot update post', err);
