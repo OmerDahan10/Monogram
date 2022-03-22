@@ -23,8 +23,9 @@ export const postService ={
 export async function loadPosts(user) {
 //    return storageService.query('posts',user).then(res=> res);
     //  return httpService.get('post',user._id);
-    const posts =  await axios.get(`//localhost:3030/api/post/?userId=${user._id}`);
-    return posts.data
+    // const posts =  await axios.get(`//localhost:3030/api/post/?userId=${user._id}`);
+    const posts =  await httpService.get(`post/?userId=${user._id}`);
+    return posts
 
 }
 
