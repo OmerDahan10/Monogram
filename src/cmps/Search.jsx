@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { getUsers } from "../store/user.action.js";
 import { Link } from "react-router-dom";
 import { ReactComponent as SearchIcon } from "../img/svg/search.svg";
+import { ReactComponent as MobileIcon } from "../img/svg/mobile-search.svg";
 
 function _Search({ getUsers, users }) {
   const [search, setSearch] = useState("");
@@ -21,6 +22,7 @@ function _Search({ getUsers, users }) {
   }
 
   return (
+    <>
     <div className="search-users">
       <label className="search-input">
         <SearchIcon className={textFocus ? "search-icon-hide" : ""} />
@@ -56,6 +58,7 @@ function _Search({ getUsers, users }) {
         </>
       )}
     </div>
+    </>
   );
 }
 
